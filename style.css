@@ -2,9 +2,9 @@
    margin: 0;
     background-color: black;
     color: white;
+    border: 1px solid black;
     width: 70pc;
     height: 205pc;
-    border: 1px solid green;
     display: block;
     justify-self: center;
     justify-content: center;
@@ -13,7 +13,7 @@
  }
  #top {
    margin: 0;
-   margin-top: 5px;
+   margin-top: 1px;
    background-color: rgba(255, 255, 255,0.27);
    height: 3pc;
    width: 70pc;
@@ -63,12 +63,23 @@ p{
   margin-top: 5pc;
   border: 1px solid red;
   background-color: rgba(255, 0, 0,0.2);
-  height: 202pc;
+  height: 192pc;
   width: 99%;
   display: block;
    justify-self: center;
    justify-content: center;
 
+   #head_line{
+    margin: 0;
+     font-size: 3pc;
+  }
+  #sub_head{
+    margin: 0;
+    font-size: 2pc;
+  }
+  .sub_head2{
+    font-size: 1.8pc;
+  }
 }
 #contennerA{
   margin: 0;
@@ -175,13 +186,17 @@ p{
 
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+#link_title{
+  text-align: center;
+}
 
 #social_medias{
   display: flex;
   margin: 0;
   margin-top: 30px;
+  margin-bottom: 100px;
   padding: 10px;
-  height: 2pc;
+  height: 8pc;
   width: 98%;
   align-content: center;
   justify-content: center;
@@ -194,47 +209,11 @@ p{
  margin-right: 20px;
  box-shadow: 1px 1px 10px  rgba(0, 0, 255,0.7);
  transition: box-shadow 0.5s ease;
+
 }
 #social_medias img:hover{
   box-shadow: 1px 1px 20px  rgba(0, 0, 255,1);
 
-}
-#last {
-  margin: 0;
-  margin-top: 15px;
-  padding: 35px;
-  border: 1px solid gold;
-  background-color: silver;
-  height: 12pc;
-  width: 93%;
-  display: flex;
-  justify-self: left;
-   justify-content: left;
-
-}
-.last-pos{
-  margin: 0;
-  padding: 0;
-  width: 60pc;
-  height: 12pc;
-  /* background-color: rgba(0, 0, 0, 0.2); */
-
-  border-right: 2px solid black;
-  padding: 5px;
-  color: black;
-}
-.texts{
-  margin: 2px;
-  margin-right: 10px;
-  font-weight: bold;
-
-}
-h2{
-  display: inline-block;
-}
-h3{
-  display: inline-block;
-  margin: 0;
 }
 
 /* ///////////////////////////////////////////////////// */
@@ -246,12 +225,13 @@ h3{
     justify-content: center;
     justify-items: center;
   }
+  
 
   #top {  
     margin: 0;
     margin-top: 5px;
     background-color: rgba(255, 255, 255,0.27);
-    height: 2.9pc;
+    height: 1.9pc;
     width: 375px;
     display: flex;
      justify-self: center;
@@ -285,7 +265,7 @@ h3{
   }
 
   p{
-    font-size: 1.1pc; 
+    font-size: 0.7pc; 
     margin: 0;
   }
   #second{
@@ -294,6 +274,17 @@ h3{
 
   }
 
+  #head_line{
+    margin: 0;
+     font-size: 1.5pc;
+  }
+  #sub_head{
+    margin: 0;
+    font-size: 1pc;
+  }
+  .sub_head2{
+    font-size: 1.1pc;
+  }
   #profile-pic{
     height: 12pc;
     width: 12pc;
@@ -378,7 +369,7 @@ h3{
     margin: 0;
     margin-top: 30px;
     padding: 10px;
-    height: auto;
+    height: 60px;
     width: 95%;
     align-content: center;
     justify-content: center;
@@ -394,49 +385,6 @@ h3{
 #social_medias img:hover{
   box-shadow: 1px 1px 20px  rgba(0, 0, 255,1);
 
-}
-#last {
-  margin: 0;
-  margin-top: 5px;
-  padding: 15px;
-  border: 1px solid gold;
-  background-color: silver;
-  height: 5pc;
-  width: 89%;
-  display: flex;
-  justify-self: left;
-   justify-content: left;
-
-}
-.last-pos{
-  margin: 0;
-  padding: 0;
-  width: 90%;
-  height: auto;
-  /* background-color: rgba(0, 0, 0, 0.2); */
-
-  border-right: 2px solid black;
-  padding: 5px;
-  color: black;
-}
-.texts{
-  margin-right: 10px;
-  font-weight: bold;
-  font-size: 1pc;
-
-
-}
-h2{
-  display: inline-block;
-  font-size: 0.8pc;
-  margin: 0;
-}
-h3{
-  display: inline-block;
-  margin: 0;
-  font-size: 0.7pc;
-
-}
 }
 /* //////////////////////////////////////// */
 
@@ -468,7 +416,6 @@ h3{
    font-size: 20px;
   }
   table{
-    border: 1px solid white;
     margin: 0;
     border-collapse: separate;
     width: 60%;
@@ -483,6 +430,18 @@ h3{
      color: gold;
      transition-duration: 0.5s;
      transition-property: background-color, color ;
+  }
+
+  #head_line{
+    margin: 0;
+     font-size: 2pc;
+  }
+  #sub_head{
+    margin: 0;
+    font-size: 1.5pc;
+  }
+  .sub_head2{
+    font-size: 1.8pc;
   }
   p{
     font-size: 1.3pc; 
@@ -582,60 +541,18 @@ h3{
     width: 95%;
     align-content: center;
     justify-content: center;
+    margin-bottom: 50px;
   }
+ 
   #social_medias img{
   border-radius: 50%;
- height: 20px;
- width: 20px;
+ height: 40px;
+ width: 40px;
  margin-right: 20px;
  box-shadow: 1px 1px 10px  rgba(0, 0, 255,0.7);
  transition: box-shadow 0.5s ease;
 }
 #social_medias img:hover{
   box-shadow: 1px 1px 20px  rgba(0, 0, 255,1);
-
-}
-#last {
-  margin: 0;
-  margin-top: 5px;
-  padding: 15px;
-  border: 1px solid gold;
-  background-color: silver;
-  height: 5pc;
-  width: 89%;
-  display: flex;
-  justify-self: left;
-   justify-content: left;
-
-}
-.last-pos{
-  margin: 0;
-  padding: 0;
-  width: 90%;
-  height: auto;
-  /* background-color: rgba(0, 0, 0, 0.2); */
-
-  border-right: 2px solid black;
-  padding: 5px;
-  color: black;
-}
-.texts{
-  margin-right: 10px;
-  font-weight: bold;
-  font-size: 1pc;
-
-
-}
-h2{
-  display: inline-block;
-  font-size: 0.8pc;
-  margin: 0;
-}
-h3{
-  display: inline-block;
-  margin: 0;
-  font-size: 0.7pc;
-
-}
 
 }
