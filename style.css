@@ -484,7 +484,10 @@ h3{
      transition-duration: 0.5s;
      transition-property: background-color, color ;
   }
-
+  p{
+    font-size: 1.3pc; 
+    margin: 0;
+  }
   #second{
     width: 100%;
     height: 100%;
