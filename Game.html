@@ -44,6 +44,32 @@
 </body>
     <script src="/server.js"></script>
     <script src="/tops.js" ></script>
-    <script src="/server-game.js" ></script>
+   <style>
+
+function spaceGameFetch(url){
+  document.getElementById('game-screen').src = url;
+  
+}
+function loadGameList(){
+    fetch('game_list.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('lists').innerHTML = data);
+
+   
+}
+function keyPress(key){
+  let event = new KeyboardEvent('Keydown',{key: key});
+  document.dispatchEvent(event);
+
+}
+document.addEventListener('keydown', (event) => {
+  console.log(`Key pressed: ${event.key}`);
+});
+
+
+
+loadGameList();
+
+</+style>
 
 </html>
