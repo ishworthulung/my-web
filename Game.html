@@ -16,7 +16,12 @@
         
         <iframe id="game-screen" frameborder="0"></iframe>
         <div>
-            <button><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            <button onclick="keyPress('ArrowUp')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            <button style="transform: rotate(180deg);" onclick="keyPress('ArrowDown')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            <button style="transform: rotate(-90deg);"" onclick="keyPress('ArrowLeft')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            <button style="transform: rotate(90deg)" onclick="keyPress('ArrowRight')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            <button onclick="keyPress('Space')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+
         </div>
     </div>
        <div id="lists"></div>
@@ -57,14 +62,10 @@ function loadGameList(){
 
    
 }
-function keyPress(key){
-  let event = new KeyboardEvent('Keydown',{key: key});
-  document.dispatchEvent(event);
-
+function keyPress(key) {
+  var iframe = document.getElementById("game-screen");
+  iframe.contentWindow.postMessage({ type: "keyPress", key: key }, "*");
 }
-document.addEventListener('keydown', (event) => {
-  console.log(`Key pressed: ${event.key}`);
-});
 
 
 
