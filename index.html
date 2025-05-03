@@ -731,16 +731,16 @@ h3{
             .then(response => response.text())
             .then(data => document.getElementById('p4').innerText = data);
         }
+        
         function loadstruct(){
             fetch('top.html')
             .then(response => response.text())
             .then(data => document.getElementById('top').innerHTML = data);
-
            
         }
+        
         function loadphoto(){
-            
-                fetch('profie pic.jpg')
+           fetch('profie pic.jpg')
             .then(response => response.blob())
             .then(blob => document.getElementById('profile-pic').src = URL.createObjectURL(blob));
            
@@ -755,8 +755,8 @@ h3{
         }
 
         loadtext();
-        loadstruct()
-        loadphoto()
+        loadstruct();
+        loadphoto();
 
   
     </script>
