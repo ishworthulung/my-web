@@ -4,7 +4,7 @@ function spaceGameFetch(url){
   
 }
 function loadGameList(){
-    fetch('files/res/game_list.html')
+    fetch('game_list.html')
     .then(response => response.text())
     .then(data => document.getElementById('lists').innerHTML = data);
 
