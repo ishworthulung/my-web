@@ -3,6 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameing Ishwor</title>
+</head>
+<link rel="stylesheet" href="/style-game.css">
+
+
+<body>
+    <div id="top"></div>
+    <div id="second">
+       <H1>Games</H1>
+       <div id="display-main">
+        
+        <iframe id="game-screen" frameborder="0"></iframe>
+        <div>
+            <button onclick="keyPress('ArrowUp')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            <button style="transform: rotate(180deg);" onclick="keyPress('ArrowDown')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            <button style="transform: rotate(-90deg);"" onclick="keyPress('ArrowLeft')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            <button style="transform: rotate(90deg)" onclick="keyPress('ArrowRight')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            <button onclick="keyPress('Space')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+
+        </div>
+    </div>
+       <div id="lists"></div>
+        
+    </div>
+
+
+    <div id="last">
+        <div id="right" class="last-pos">
+            <h1 class="texts">Contact</h1>
+            <h2 class="texts">Phone: </h2>
+            <h3 >9803374311</h3>
+            <br>
+            <h2 class="texts">Email: </h2>
+            <h3 >thulungraiishwor@gmail.com</h3>
+        </div>
+        <div id="mid" class="last-pos">
+
+        </div>
+        <div id="left" class="last-pos">
+
+        </div>
+    </div>
+    
+</body>
+    <script src="/server.js"></script>
+    <script src="/tops.js" ></script>
+   <script>
+
+function spaceGameFetch(url){
+  document.getElementById('game-screen').src = url;
+  
+}
+function loadGameList(){
+    fetch('game_list.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('lists').innerHTML = data);
+
+   
+}
+function keyPress(key) {
+  var iframe = document.getElementById("game-screen");
+  iframe.contentWindow.postMessage({ type: "keyPress", key: key }, "*");
+}
+
+
+
+loadGameList();
+
+</script>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rai Ishwor</title>
     <meta name="description" content="About Ishwor Rai also known as Sachin">
     <meta name="keywords" content="thulung ishwor,thulung rai,ishwor rai, sachin rai, sachin, ishwor, rai, electnic, hackhin, robotic, nepali">
@@ -674,3 +751,4 @@ p{
     </script>
     <script src="tops.js" ></script>
 </html>
+ -->
