@@ -5,66 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gameing Ishwor</title>
 </head>
-<link rel="stylesheet" href="/style-game.css">
 
+<style>
+    body{
+        background-color: black;
+        color: silver;
+    }
+    #second{
+        text-align: center;
+        font-size: 20px;
+    }
+    #second img{
+       height: 180px;
+       width: 180px;
+    }
+</style>
 
 <body>
-    <div id="top"></div>
     <div id="second">
-       <H1>Games</H1>
-       <div id="display-main">
-        
-        <iframe id="game-screen" frameborder="0"></iframe>
-        
-    </div>
-       <div id="lists"></div>
-        
+            <img src="https://thumbs.dreamstime.com/b/warning-sign-symbol-black-background-warning-sign-symbol-black-background-235875806.jpg" alt="">
+        <H1>Sorry guy's</H1>
+       <H1>Your exams are coming.!</H1>
+       <h1>Focus on studying and do your best</h1>
+    <h1>👍🏼</h1>
     </div>
 
-
-    <div id="last">
-        <div id="right" class="last-pos">
-            <h1 class="texts">Contact</h1>
-            <h2 class="texts">Phone: </h2>
-            <h3 >9803374311</h3>
-            <br>
-            <h2 class="texts">Email: </h2>
-            <h3 >thulungraiishwor@gmail.com</h3>
-        </div>
-        <div id="mid" class="last-pos">
-
-        </div>
-        <div id="left" class="last-pos">
-
-        </div>
-    </div>
-    
-</body>
-    <script src="/server.js"></script>
-    <script src="/tops.js" ></script>
-   <script>
-
-function spaceGameFetch(url){
-  document.getElementById('game-screen').src = url;
-  
-}
-function loadGameList(){
-    fetch('game_list.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('lists').innerHTML = data);
-
-   
-}
-function keyPress(key) {
-  var iframe = document.getElementById("game-screen");
-  iframe.contentWindow.postMessage({ type: "keyPress", key: key }, "*");
-}
-
-
-
-loadGameList();
-
-</script>
 
 </html>
 
