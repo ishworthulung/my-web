@@ -13,9 +13,9 @@ function checkCollision() {
     let box2 = document.getElementById("second");
     let logo = document.getElementById("logo");
     if (isTouching(box1, box2)) {
-        box1.style.backgroundColor = "black"; // Change color on collision
+        box1.style.backgroundColor = "(#FF6600"; // Change color on collision
     } else {
-        box1.style.backgroundColor = "rgba(255, 255, 255,0.27)"; // Reset color
+        box1.style.backgroundColor = "#008080"; // Reset color
 
     }
     if (isTouching(box1, box2)) {
