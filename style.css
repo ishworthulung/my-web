@@ -243,6 +243,8 @@ p{
     height: auto;
     justify-content: center;
     justify-items: center;
+       align-self: center;
+
   }
   
 
@@ -984,3 +986,4 @@ p{
 
 }
 } */
+
