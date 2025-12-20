@@ -84,6 +84,96 @@
     
 </body>
     
-    <script src="server.js" ></script>
+        <script>
+            function loadtext(){
+            fetch('p1.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p1').innerText = data);
+
+            fetch('p2.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p2').innerText = data);
+
+            fetch('p3.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p3').innerText = data);
+
+            fetch('p4.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p4').innerText = data);
+            
+            
+
+        }
+
+        function loadstruct(){
+            fetch('top.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('top').innerHTML = data);
+
+            fetch('top.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('top_second').innerHTML = data);
+           
+        }
+        
+        function loadphoto(){
+            
+                fetch('profie pic.jpg')
+            .then(response => response.blob())
+            .then(blob => document.getElementById('profile-pic').src = URL.createObjectURL(blob));
+           
+       
+            fetch('dc motor 2.jpg')
+            .then(response => response.blob())
+            .then(blob => document.getElementById('pic1').src = URL.createObjectURL(blob));
+
+            fetch('drilling soil.jpg')
+            .then(response => response.blob())
+            .then(blob => document.getElementById('pic2').src = URL.createObjectURL(blob));
+        }
+
+        
+        function hide_meuns(){
+          const bt1 = document.getElementById("menu_shows");
+          const bt2 = document.getElementById("menu_hide");
+          const menuAll = document.getElementById("top_second");
+            const text_menu = document.getElementById("menu_table");
+
+            text_menu.classList.remove("show_menu_list");
+            text_menu.classList.add("hide_menu_list");
+            
+            menuAll.classList.remove("open");
+            menuAll.classList.add("close");
+
+            
+            bt1.style.display="none";
+            bt2.style.display="flex";
+           
+        }
+        function show_meuns(){
+            const bt1 = document.getElementById("menu_shows");
+            const bt2 = document.getElementById("menu_hide");
+            const menuAll = document.getElementById("top_second");
+            const text_menu = document.getElementById("menu_table");
+            
+            text_menu.classList.remove("hide_menu_list");
+                 text_menu.classList.add("show_menu_list");
+
+                bt1.style.display="flex";
+                bt2.style.display="none";
+                menuAll.classList.remove("close");
+                menuAll.classList.add("open");               
+
+        }
+
+        loadtext()
+        loadstruct()
+        loadphoto()
+        </script>
+
+
+      
     <script src="tops.js" ></script>
 </html>
+
