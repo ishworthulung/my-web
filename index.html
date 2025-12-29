@@ -1,881 +1,184 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rai Ishwor</title>
-    <meta name="description" content="About Ishwor Rai also known as Sachin">
-    <meta name="keywords" content="thulung ishwor,thulung rai,ishwor rai, sachin rai, sachin, ishwor, rai, electnic, hackhin, robotic, nepali">
-    <meta name="author" content="Ishwor">
- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConttrolSachin</title>
 </head>
-<style>
-     body{
-   margin: 0;
-     background-color: #1A001A;
-    color: white  ; 
-    border: 1px solid black;
-    width: 1110px;
-    height: auto;
-    display: block;
-    justify-self: center;
-    justify-content: center;
+<html>
+<head>
+  <title>ESP8266 Firebase Control</title>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 
+  <style>
+    body{
+      background-color: black;
+      color: white;
+      justify-content: center;
+      justify-self: center;
+      justify-items: center;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+    }
+    button{
+      background-color: black;
+      color: white;
+      height: 10pc;
+      width: 10pc;
+      border-radius: 50%;
+    }
+    #red_on{
+      box-shadow: -5px 10px 5px green;
 
- }
- #top {
-   margin: 0;
-   margin-top: 1px;
-   background-color: #008080;
-   height: 3pc;
-   width: 100%;
-   display: flex;
-    justify-self: center;
-    justify-content: left;
-  position: fixed;
-  transition: box-shadow 1.2s,  background-color 1s ease, border-radius 1s ease ;
-  }
-   #top_second{
-    display: none;
-   }
-   #top_second_nev{
-    display: none;
-   
-  }
-  #logo_shows{
-    display: none;
-    
-  }
- 
- 
-  #top_second{
-   display: none;
-  }
+    }
+    #green_on{
+      box-shadow: -5px 10px 5px green;
+    }
+    #controls{
+      justify-content: center;
+      justify-items: center;
+      width: 50%;
+      height: auto;
+      display: none;
+    }
+  </style>
 
- #logo{
-  margin: 0;
-  padding: 10px;
-  margin-left: 1%;
-  font-size: 25px;
- }
- table{
-   margin: 0;
-   margin-left: 10%;
-   border-collapse: separate;
-   width: 38pc;
-   height: 3pc;
- }
- th{
-   font-size: 1.3pc;
-    text-align: center;
-    padding: 4px;
-    margin-right: 5px;
-    color: #D3D3D3;
-    font-weight: bold;
-    transition-duration: 0.5s;
-    transition-property: background-color, color ;
- }
-th:hover{
-  background-color: brown;
-  color: cyan;
-}
-
-p{
-  font-size: 1.5pc; 
-  margin: 0;
-}
-
-#second {
-  margin: 0;
-  margin-top: 5pc;
-  border: 1px solid red;
-  background-color: rgba(255, 0, 0,0.2);
-  height: 192pc;
-  width: 99%;
-  display: block;
-   justify-self: center;
-   justify-content: center;
-
-   #head_line{
-    margin: 0;
-     font-size: 4pc;
-  }
-  #sub_head{
-    margin: 0;
-    font-size: 2pc;
-  }
-  .sub_head2{
-    font-size: 1.8pc;
-    font-weight: bold;
-  }
-}
-#contennerA{
-  margin: 0;
-  height: 27pc;
-  width: 98%pc;
-  display: grid;
-  text-align: center;
-  justify-self: center;
-  justify-content: center;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#profile-pic{
-  margin: auto;
-  padding: 10px;
-  width: 18pc;
-  height: 18pc;
-  border-radius: 50%;
-  object-fit: cover;
-}
-#contennerB{
-  margin: 0;
-  margin-top: 30px;
-  padding: 10px;
-  height: auto;
-  width: 98%;
-
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#contennerC{
-  margin: 0;
-  margin-top: 10px;
-  padding: 7px;
-  height: auto;
-  /* border: 1px solid white; */
-
-  width: 98%pc;
-  
-  display: inline-flex;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.pic-gbl{
-  border-radius: 20px;
-}
-#sub-A{
-  margin: 0;
-  margin-right: 10px;
-  padding: 10px;
-  /* border: 1px solid gainsboro; */
-  height: 32pc;
-  width: 60%;
-  display: inline-flex;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#sub-B{
-  margin: 0;
-  margin-right: 10px;
-  padding: 10px;
-  /* border: 1px solid gainsboro; */
-  height: 27pc;
-  width: 40%;
-  display: inline-flex;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#contennerD{
-  margin: 0;
-  margin-top: 50px;
-  padding: 7px;
-  height: auto;
-  /* border: 1px solid white; */
-
-  width: 98%pc;
-
-  display: inline-flex;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#sub-C{
-  margin: 0;
-  margin-right: 10px;
-  padding: 10px;
-  /* border: 1px solid gainsboro; */
-  height: 27pc;
-  width: 40%;
-  display: inline-flex;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#sub-D{
-  margin: 0;
-  margin-right: 10px;
-  padding: 10px;
-  /* border: 1px solid gainsboro; */
-  height: 35pc;
-  width: 60%;
-  display: inline-flex;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#contennerE{
-  border-bottom: 1px solid silver ;
-  margin: 0;
-  margin-top: 30px;
-  padding: 10px;
-  height: auto;
-  width: 98%pc;
-
-
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#link_title{
-  text-align: center;
-  margin-top: 250px;
-}
-
-#social_medias{
-  bottom: 0px;
-  display: flex;
-  margin: 0;
-  margin-top: 100px;
-  margin-bottom: 30px;
-  padding: 10px;
-  height: 8pc;
-  width: 98%;
-  align-content: center;
-  justify-content: center;
-}
-
-#social_medias img{
-  border-radius: 50%;
- height: 40px;
- width: 40px;
- margin-right: 20px;
- box-shadow: 1px 1px 10px  rgba(0, 0, 255,0.7);
- transition: box-shadow 0.5s ease;
-
-}
-#social_medias img:hover{
-  box-shadow: 1px 1px 20px  rgba(0, 0, 255,1);
-
-}
-
-/*******************************************/
-
-
-@media (min-width: 768px) and (max-width: 1024px){
-body{
-   margin: 0;
-     background-color: #1A001A;
-    color: white  ; 
-    border: 1px solid black;
-    width: 800px;
-    height: auto;
-    display: block;
-    justify-self: center;
-    justify-content: center;
-
-
- }
- #top {
-   margin: 0;
-   margin-top: 1px;
-   background-color: #008080;
-   height: 3pc;
-   width: 100%;
-   display: flex;
-    justify-self: center;
-    justify-content: left;
-  position: fixed;
-  transition: box-shadow 1.2s,  background-color 1s ease, border-radius 1s ease ;
-  }
-   #top_second{
-    display: none;
-   }
-   #top_second_nev{
-    display: none;
-   
-  }
-  #logo_shows{
-    display: none;
-    
-  }
- 
- 
-  #top_second{
-   display: none;
-  }
-
- #logo{
-  margin: 0;
-  padding: 10px;
-  margin-left: 1%;
-  font-size: 25px;
- }
- table{
-   margin: 0;
-   margin-left: 10%;
-   border-collapse: separate;
-   width: 38pc;
-   height: 3pc;
- }
- th{
-   font-size: 1.3pc;
-    text-align: center;
-    padding: 4px;
-    margin-right: 5px;
-    color: #D3D3D3;
-    font-weight: bold;
-    transition-duration: 0.5s;
-    transition-property: background-color, color ;
- }
-th:hover{
-  background-color: brown;
-  color: cyan;
-}
-
-  #head_line{
-    margin: 0;
-     font-size: 2pc;
-  }
-  #sub_head{
-    margin: 0;
-    font-size: 1.5pc;
-  }
-  .sub_head2{
-    font-size: 1.8pc;
-    font-weight: bold;
-  }
-  p{
-    font-size: 1.3pc; 
-    margin: 0;
-  }
-
-  #second{
-    width: 100%;
-    height: 100%;
-
-  }
-
-  #profile-pic{
-    height: 12pc;
-    width: 12pc;
-  }
-  img{
-    height: 330px;
-    width: 300px;
-  }
-  #contennerA{
-    height: auto;
-    width: 95%;
-    text-align: center;
-  }
-  #contennerB{
-    height: auto;
-    width: 95%;
-    text-align: left;
-
-  }
-  #contennerC{
-    height: auto;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-
-  }
-  #sub-A{
-    margin: 0;
-    padding: 10px;
-    height:auto;
-    width: 94%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  #sub-B{
-    margin: 0;
-    margin-right: 10px;
-    padding: 10px;
-    height: auto;
-    width: 94%;
-    justify-content: center;
-  }
-  #contennerD{
-    padding: 0;
-    height: auto;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-  }
-  #sub-D{
-    margin: 0;
-    padding: 10px;
-    height:auto;
-    width: 94%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  #sub-C{
-    margin: 0;
-    padding: 5px;
-    margin-right: 10px;
-    padding: 10px;
-    height: auto;
-    width: 94%;
-    justify-content: center;
-  }
-  #contennerE{
-    border-bottom: 1px solid silver ;
-    margin: 0;
-    margin-top: 30px;
-    padding: 10px;
-    height: auto;
-    width: 95%;
-    margin-bottom: 100px;
-  
-  
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  #social_medias{
-    bottom: 0px;
-    display: flex;
-    margin: 0;
-    margin-top: 30px;
-    padding: 10px;
-    height: auto;
-    width: 95%;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
- 
-  #social_medias img{
-  border-radius: 50%;
- height: 40px;
- width: 40px;
- margin-right: 20px;
- box-shadow: 1px 1px 10px  rgba(0, 0, 255,0.7);
- transition: box-shadow 0.5s ease;
-}
-#social_medias img:hover{
-  box-shadow: 1px 1px 20px  rgba(0, 0, 255,1);
-
-}
-}
-
-
-/* //////////////////////////////////////// */
-
-@media (max-width: 768px){
-  
-  body{
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    justify-items: center;
-    align-self: center;
-  }
-  
-
-  #top {  
-   
-    display: none;
-    
-     
-  }
-  #top_second_nev{
-    top: 0;
-    margin: 0;
-   background-color: gray;
-   height: auto;
-   width: 100%;
-   display: flex;
-    justify-self: center;
-    justify-content: left;
-    align-items: center;
-    position: fixed;
-    padding: 0;
-   
-  }
-  #logo_shows{
-    margin: 0;
-    padding: 10px;
-    padding-left: 5%;
-    font-size: 20px;
-    flex-grow: 1;
-    text-align: left;
-    display: block;
-    
-  }
- 
- 
-  #top_second{
-    margin: 0;
-   margin-top: 1px;
-   background-color: gray;
-   height: 0;
-   width: 100%;
-   display: flex;
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    flex-direction: column;  
-    padding: 0;
-    opacity: 0;
-    transition: height 0.5s ease, opacity 0.5s ease;
-
-  }
-  #top_second.close {
-    height: 0;
-    opacity: 0;
-    
-  }
-    #top_second.open {
-    height: 50%;
-    opacity: 1;
-  }
-
-  #menu_shows{
-    background-color: transparent;
-    border: none;
-    padding-right: 7%;
-    display: none;
-    font-size: 160%;
-    color: cyan;
-  }
-  #menu_hide{
-    background-color: transparent;
-    border: none;
-    padding-right: 7%;
-    display: flex;
-    font-size: 160%;
-    color: cyan;
-  }
-  #logo{
-   margin: 0;
-   margin-left: 10px;
-   margin-bottom: 50px;
-   font-size: 16px;
-   display: none;
- 
-  }
-  table{
-
-    margin: 0;
-    border-collapse: separate;
-    width: auto;
-    height: auto;
-    margin-left: 0.5pc;
-    display: none;
-    transform: rotate(270deg);
-    margin-top: 15px;
-    padding-top: 15px;
-  }
-
-  
-  
-  
-
-  th{
-    font-size: 1pc;
-     text-align: center;
-     color: cyan;
-         writing-mode: vertical-rl;
-         white-space: nowrap;
-         padding: 8px;
-         margin-bottom: 10px;
-  }
-
-  #head_line{
-    margin: 0;
-     font-size: 2pc;
-  }
-  #sub_head{
-    margin: 0;
-    font-size: 1.5pc;
-  }
-  .sub_head2{
-    font-size: 1.8pc;
-    font-weight: bold;
-  }
-  p{
-    font-size: 1.3pc; 
-    margin: 0;
-  }
-
-  #second{
-    width: 100%;
-    height: 100%;
-              padding-left: 25px;
-
-
-  }
-
-  #profile-pic{
-    height: 12pc;
-    width: 12pc;
-  }
-  img{
-    height: 330px;
-    width: 300px;
-  }
-  #contennerA{
-    height: auto;
-    width: 95%;
-    text-align: center;
-  }
-  #contennerB{
-    height: auto;
-    width: 95%;
-    text-align: left;
-
-  }
-  #contennerC{
-    height: auto;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-
-  }
-  #sub-A{
-    margin: 0;
-    padding: 10px;
-    height:auto;
-    width: 94%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  #sub-B{
-    margin: 0;
-    margin-right: 10px;
-    padding: 10px;
-    height: auto;
-    width: 94%;
-    justify-content: center;
-  }
-  #contennerD{
-    padding: 0;
-    height: auto;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-  }
-  #sub-D{
-    margin: 0;
-    padding: 10px;
-    height:auto;
-    width: 94%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  #sub-C{
-    margin: 0;
-    padding: 5px;
-    margin-right: 10px;
-    padding: 10px;
-    height: auto;
-    width: 94%;
-    justify-content: center;
-  }
-  #contennerE{
-    border-bottom: 1px solid silver ;
-    margin: 0;
-    margin-top: 30px;
-    padding: 10px;
-    height: auto;
-    width: 95%;
-  
-  
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  #social_medias{
-    display: flex;
-    margin: 0;
-    margin-top: 30px;
-    padding: 10px;
-    height: auto;
-    width: 95%;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 50px;
-  }
- 
-  #social_medias img{
-  border-radius: 50%;
- height: 40px;
- width: 40px;
- margin-right: 20px;
- box-shadow: 1px 1px 10px  rgba(0, 0, 255,0.7);
- transition: box-shadow 0.5s ease;
-}
-#social_medias img:hover{
-  box-shadow: 1px 1px 20px  rgba(0, 0, 255,1);
-
-}
-}
-</style>
+</head>
 <body>
-    <div id="top"></div>
-    <div id="top_second"></div>
-    <div id="top_second_nev">
-        <h2 id="logo_shows" onclick="window.location.href = 'index.html';">𝖗𝖆𝖎 𝖎𝖘𝖍𝖜𝖔𝖗</h2>
-         
-        <button onclick="hide_meuns()" id="menu_shows">×</button>
-        <button onclick="show_meuns()" id="menu_hide">≡</button>
+  <h2>Control My Devices</h2>
+  <div id="passkey">
+    <p id="passkey_test"></p>
+    <label for="input">Passkey: </label>
+    <input type="password" 
+      inputmode="numeric" 
+       pattern="[0-9]*" 
+       oninput="this.value=this.value.replace(/[^0-9]/g,'');">
+    <input type="button" onclick="checkPasskey()" value="Submit"></input>
+  </div>
+  <div id="controls">
+    <label>Time: </label>
+    <label id="seconds"></label><br><br>
+  <label>Fan Speed: </label>
+  <input onchange="setFan()" type="range" id="fanInput" min="0" max="100" value="0"> 
+  <!-- <button onclick="setFan()">Set Fan</button> -->
+  <br><br>
 
-    </div>
+  <button id="red_on" onclick="setRed(false)">Red ON</button>
+  <button id="red_off" onclick="setRed(true)">Red OFF</button>
+  <br><br>
 
-    <!-- <div id="second">
-        <div id="contennerA">
-            <h1 id="head_line">Hello' I am Ishwor Rai,
-            </h1>
-            <h1 id="sub_head" style="margin: 0;">also known as Sachin.</h1>
-            <img id="profile-pic">
-        </div>
-        <div id="contennerB">
-            <p class="sub_head2">Introduction</p><br>
-            <p id="p1"></p>
-            <p class="sub_head2">The Bigbang</p>
+  <button id="green_on" onclick="setGreen(false)">Green ON</button>
+  <button id="green_off" onclick="setGreen(true)">Green OFF</button>
 
-        </div>
-        <div id="contennerC">
-            <div id="sub-A" >
-                <p id="p2"></p>
-            </div>
-            <div id="sub-B">
-                <img class="pic-gbl" id="pic1" alt="loading">
-            </div>
-        </div>
-        <div id="contennerD">
-            <div id="sub-C" >
-                <img class="pic-gbl"  id="pic2" alt="loading">
-            </div>
-            <div id="sub-D">
-                <p id="p3"></p>
-            </div>
-        </div>
-
-         <div id="contennerE">
-            <p id="p4"></p>
-
-        </div> -->
-
-         
-        
-    </div>
-    <!-- <div>
-        <h1>Mye Projects</h1>
-        <h2>Electnic</h2>
-        <h2>Robotics</h2>
-        <h2>Scratch Games</h2>
-        <h2>DIY Products</h2>
-    </div> -->
-    <h2 id="link_title">Let's stay in touch</h2>
-
-    <div id="social_medias">
-
-        <img onclick="window.location.href = 'https://www.youtube.com/@Sachinht6';" src="https://yt3.googleusercontent.com/yfL9jT-viEJd27Vb-qcP9DGODRQqwjXx9ih5yNezscHga2f__S4paZnjDtmc8qGFNvXMsiFb-g=s160-c-k-c0x00ffffff-no-rj" alt="">
-        <img onclick="window.location.href = 'https://www.facebook.com/share/16GiCHuqgH/';" src="https://i.pinimg.com/originals/36/a5/8c/36a58cda203979ba2b7b448fce2ea422.jpg" alt="">
-        <img onclick="window.location.href = 'https://www.linkedin.com/in/sachin-rai-a43769251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app';" src="https://seekvectors.com/files/download/Linkedin-background-black-01.jpg" alt="">
-        <img onclick="window.location.href = 'https://www.facebook.com/share/16GiCHuqgH/';" src="https://static.vecteezy.com/system/resources/thumbnails/015/730/552/small_2x/eps10-white-camera-abstract-line-art-icon-isolated-on-black-background-social-media-outline-symbol-in-a-simple-flat-trendy-modern-style-for-your-website-design-logo-and-mobile-application-vector.jpg" alt="">
-        
-    </div>
-    
-
-
-    
-    
+  </div>
+  <p style="font-style: italic; bottom: 100px;">© Made by me Ishwor as you know Sachin</p>
+  
 </body>
-    
-    <script src="tops.js" ></script>
-   
-        <script>
-            function loadtext(){
-            fetch('p1.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('p1').innerText = data);
 
-            fetch('p2.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('p2').innerText = data);
+<script>
+    var firebaseConfig = {
+       apiKey: "AIzaSyAtGIjPSWS6bFrd0XAKjFU6QOMwXHFYltc",
+  authDomain: "iot-demo-61835.firebaseapp.com",
+  databaseURL: "https://iot-demo-61835-default-rtdb.firebaseio.com",
+  projectId: "iot-demo-61835",
+  storageBucket: "iot-demo-61835.firebasestorage.app",
+  messagingSenderId: "380141904138",
+  appId: "1:380141904138:web:4d4e5b6386d42c19cf5af3",
+  measurementId: "G-GKSQKMW29D"
+    };
+    firebase.initializeApp(firebaseConfig);
 
-            fetch('p3.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('p3').innerText = data);
+    function setFan() {
+      var val = document.getElementById("fanInput").value;
+      firebase.database().ref("fan").set(parseInt(val));
+    }
 
-            fetch('p4.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('p4').innerText = data);
-            
-            
-
-        }
-
-        function loadstruct(){
-            fetch('top.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('top').innerHTML = data);
-
-            fetch('top.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('top_second').innerHTML = data);
-           
-        }
-        
-        function loadphoto(){
-            
-                fetch('profie pic.jpg')
-            .then(response => response.blob())
-            .then(blob => document.getElementById('profile-pic').src = URL.createObjectURL(blob));
-           
-       
-            fetch('dc motor 2.jpg')
-            .then(response => response.blob())
-            .then(blob => document.getElementById('pic1').src = URL.createObjectURL(blob));
-
-            fetch('drilling soil.jpg')
-            .then(response => response.blob())
-            .then(blob => document.getElementById('pic2').src = URL.createObjectURL(blob));
-        }
-
-        
-        function hide_meuns(){
-          const bt1 = document.getElementById("menu_shows");
-          const bt2 = document.getElementById("menu_hide");
-          const menuAll = document.getElementById("top_second");
-            const text_menu = document.getElementById("menu_table");
-
-            text_menu.classList.remove("show_menu_list");
-            text_menu.classList.add("hide_menu_list");
-            
-            menuAll.classList.remove("open");
-            menuAll.classList.add("close");
-
-            
-            bt1.style.display="none";
-            bt2.style.display="flex";
-           
-        }
-        function show_meuns(){
-            const bt1 = document.getElementById("menu_shows");
-            const bt2 = document.getElementById("menu_hide");
-            const menuAll = document.getElementById("top_second");
-            const text_menu = document.getElementById("menu_table");
-            
-            text_menu.classList.remove("hide_menu_list");
-                 text_menu.classList.add("show_menu_list");
-
-                bt1.style.display="flex";
-                bt2.style.display="none";
-                menuAll.classList.remove("close");
-                menuAll.classList.add("open");               
-
-        }
-
-        loadtext()
-        loadstruct()
-        loadphoto()
-        </script>
-
-
+    function setRed(state) {
+      firebase.database().ref("red").set(state);
       
-    <script src="tops.js" ></script>
+      
+    }
+
+    function setGreen(state) {
+      firebase.database().ref("green").set(state);
+      
+    }
+    function getRandomFourDigit() { 
+      return Math.floor(Math.random() * (9999 - 1111 + 1)) + 1111; 
+    }
+
+    function checkPasskey(){
+      var inputPasskey = document.querySelector("#passkey input[type='password']").value;
+      
+      var passkeyRef = firebase.database().ref("passkey"); 
+      passkeyRef.once("value").then(function(snapshot) { 
+        var correctPasskey = snapshot.val(); // Now you can compare 
+       
+      if (parseInt(inputPasskey, 10) == correctPasskey) {
+        document.getElementById("passkey").style.display = "none";
+        document.getElementById("controls").style.display = "block";
+
+        firebase.database().ref("passkey").set(getRandomFourDigit());
+         totalSeconds = 1*60 ;    
+          updateTime();
+
+      } else {
+        alert("Incorrect passkey");
+      }
+
+        
+      
+      });  
+      
+    }
+      
+    var redRef = firebase.database().ref("red");
+    redRef.on("value", function(snapshot) {
+      var redState = snapshot.val();
+      if (redState == false){
+        document.getElementById("red_on").style.display = "none";
+        document.getElementById("red_off").style.display = "block";
+      }else{
+        document.getElementById("red_on").style.display = "block";
+        document.getElementById("red_off").style.display = "none";
+      }
+    });
+    var greenRef = firebase.database().ref("green");
+    greenRef.on("value", function(snapshot) {
+      var greenState = snapshot.val();
+      if (greenState == false){
+        document.getElementById("green_on").style.display = "none";
+        document.getElementById("green_off").style.display = "block";
+      }else{
+        document.getElementById("green_on").style.display = "block";
+        document.getElementById("green_off").style.display = "none";
+      }
+    });
+
+    const secondsLabel = document.getElementById("seconds");
+  
+    let totalSeconds = 5*60  ;
+    function updateTime() {
+      let minutes = Math.floor(totalSeconds / 60);
+      let seconds = totalSeconds % 60;
+  
+      secondsLabel.innerHTML =
+        (minutes < 10 ? "0" + minutes : minutes) +
+        ":" +
+        (seconds < 10 ? "0" + seconds : seconds);
+  
+      if (totalSeconds > 0) {
+        totalSeconds--;
+      } else {
+       document.getElementById("passkey").style.display = "block";
+        document.getElementById("controls").style.display = "none";
+      }
+    }
+    setInterval(updateTime, 1000);
+  </script>
 </html>
-
-
-
-
-
-
-
 
