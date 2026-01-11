@@ -1,4 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameing Ishwor</title>
+</head>
+<link rel="stylesheet" href="style-game.css">
 
+
+<body>
+    <div id="top"></div>
+    <div id="second">
+       <H1>Games</H1>
+       <div id="display-main">
+        
+        <iframe id="game-screen" frameborder="0"></iframe>
+        <div>
+            <button id="up"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            <button id="down" style="transform: rotate(180deg);" onclick="keyPress('ArrowDown')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            <button id="space"> —------- </button>
+            <button id="left" style="transform: rotate(-90deg);" onclick="keyPress('ArrowLeft')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            <button id="right" style="transform: rotate(90deg)" onclick="keyPress('ArrowRight')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+            
+
+        </div>
+    </div>
+       <div id="lists"></div>
+        
+    </div>
+
+
+</body>
+    <script src="server.js"></script>
+    <script src="tops.js" ></script>
+    <script src="files/res/server-game.js" ></script>
+    <script>
+        function sendKey(keyCode, type="keydown") { 
+            let event = new KeyboardEvent(type, { 
+                keyCode: keyCode, which: keyCode }); 
+                document.querySelector("iframe").contentWindow.document.dispatchEvent(event);
+                
+                } 
+                document.getElementById("left").addEventListener("touchstart", () => sendKey(37));
+                document.getElementById("left").addEventListener("touchend", () => sendKey(37,"keyup")); 
+                
+                document.getElementById("right").addEventListener("touchstart", () => sendKey(39)); 
+                document.getElementById("right").addEventListener("touchend", () => sendKey(39,"keyup")); 
+                
+                document.getElementById("space").addEventListener("touchstart", () => sendKey(32));
+                document.getElementById("space").addEventListener("touchend", () => sendKey(32,"keyup")); 
+                
+                document.getElementById("up").addEventListener("touchstart", () => sendKey(38)); 
+                document.getElementById("up").addEventListener("touchend", () => sendKey(38,"keyup"));
+                
+                document.getElementById("down").addEventListener("touchstart", () => sendKey(40)); 
+                document.getElementById("down").addEventListener("touchend", () => send
+
+                
+                </script>
+    </script>
+
+</html>
+<!-- 
 
 <!DOCTYPE html>
 <html lang="en">
@@ -192,3 +255,4 @@
 
 
 
+ -->
