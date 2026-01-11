@@ -25,7 +25,24 @@
 
         </div>
     </div>
-       <div id="lists"></div>
+       <div id="lists">
+           <div onclick="spaceGameFetch('Space fight.html')" class="contenner-icon" id="space-game">
+    <img class="icons" src="space fiht.png" alt="">
+    <h2>Space Fight</h2>
+</div>
+<div onclick="spaceGameFetch('Car game.html')" class="contenner-icon" id="space-game">
+    <img class="icons" src="Screenshot 2025-04-22 214535.png" alt="">
+    <h2>Car Circule</h2>
+</div>
+<div onclick="spaceGameFetch('Hunter Badman.html')" class="contenner-icon" id="space-game">
+    <img class="icons" src="hunter batman.png" alt="">
+    <h2>Space Fight</h2>
+</div>
+<div onclick="spaceGameFetch('Identify num.html')" class="contenner-icon" id="space-game">
+    <img class="icons" src="maze game.png" alt="">
+    <h2>Car Circule</h2>
+</div>
+       </div>
         
     </div>
 
@@ -39,13 +56,6 @@
 function spaceGameFetch(url){
   document.getElementById('game-screen').src = url;
   
-}
-function loadGameList(){
-    fetch('game_list.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('lists').innerHTML = data);
-
-   
 }
 
         function sendKey(keyCode, type="keydown") { 
@@ -74,6 +84,7 @@ function loadGameList(){
                 </script>
     
 </html>
+
 
 
 
