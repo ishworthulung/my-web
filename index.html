@@ -35,6 +35,7 @@
     <script src="tops.js" ></script>
     <script>
         
+
 function spaceGameFetch(url){
   document.getElementById('game-screen').src = url;
   
@@ -47,9 +48,6 @@ function loadGameList(){
    
 }
 
-
-
-loadGameList();
         function sendKey(keyCode, type="keydown") { 
             let event = new KeyboardEvent(type, { 
                 keyCode: keyCode, which: keyCode }); 
@@ -71,10 +69,12 @@ loadGameList();
                 document.getElementById("down").addEventListener("touchstart", () => sendKey(40)); 
                 document.getElementById("down").addEventListener("touchend", () => send
 
-                
+                loadGameList();
+
                 </script>
     
 </html>
+
 
 
 
