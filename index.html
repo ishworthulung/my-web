@@ -33,8 +33,23 @@
 </body>
     <script src="server.js"></script>
     <script src="tops.js" ></script>
-    <script src="files/res/server-game.js" ></script>
     <script>
+        
+function spaceGameFetch(url){
+  document.getElementById('game-screen').src = url;
+  
+}
+function loadGameList(){
+    fetch('game_list.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('lists').innerHTML = data);
+
+   
+}
+
+
+
+loadGameList();
         function sendKey(keyCode, type="keydown") { 
             let event = new KeyboardEvent(type, { 
                 keyCode: keyCode, which: keyCode }); 
