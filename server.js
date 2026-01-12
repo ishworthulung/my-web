@@ -1,18 +1,18 @@
 
         function loadtext(){
-            fetch('p1.txt')
+            fetch('files/cv/p1.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p1').innerText = data);
 
-            fetch('p2.txt')
+            fetch('files/cv/p2.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p2').innerText = data);
 
-            fetch('p3.txt')
+            fetch('files/cv/p3.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p3').innerText = data);
 
-            fetch('p4.txt')
+            fetch('files/cv/p4.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p4').innerText = data);
             
@@ -33,65 +33,21 @@
         
         function loadphoto(){
             
-                fetch('profie pic.jpg')
+                fetch('photo for web/profie pic.jpg')
             .then(response => response.blob())
             .then(blob => document.getElementById('profile-pic').src = URL.createObjectURL(blob));
            
        
-            fetch('dc motor 2.jpg')
+            fetch('photo for web/dc motor 2.jpg')
             .then(response => response.blob())
             .then(blob => document.getElementById('pic1').src = URL.createObjectURL(blob));
 
-            fetch('drilling soil.jpg')
+            fetch('photo for web/drilling soil.jpg')
             .then(response => response.blob())
             .then(blob => document.getElementById('pic2').src = URL.createObjectURL(blob));
         }
 
-        function loadTitles(){
-            fetch('files/res/Electronic/Titles/title1.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('topic_1').innerText = data);
-
-         
-            fetch('files/res/Electronic/Titles/title2.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('topic_2').innerText = data);
-
-            fetch('files/res/Electronic/Titles/title3.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('topic_3').innerText = data);
-
-            fetch('files/res/Electronic/Titles/title4.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('topic_4').innerText = data);
-
-            fetch('files/res/Electronic/Titles/title5.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('topic_5').innerText = data);
-
-            
-            fetch('files/res/Electronic/Titles/title6.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('topic_6').innerText = data);
-
-            fetch('files/res/Electronic/Titles/title7.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('topic_7').innerText = data);
-
-            fetch('files/res/Electronic/Titles/title8.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('topic_8').innerText = data);
-
-            fetch('files/res/Electronic/Titles/title9.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('topic_9').innerText = data);
-
-            fetch('files/res/Electronic/Titles/title10.txt')
-            .then(response => response.text())
-            .then(data => document.getElementById('topic_10').innerText = data);
-            
-
-        }
+        
         function hide_meuns(){
           const bt1 = document.getElementById("menu_shows");
           const bt2 = document.getElementById("menu_hide");
@@ -124,11 +80,156 @@
                 menuAll.classList.add("open");               
 
         }
+        function loadPergrafh(){
+            fetch('files/res/Electronic/Pargrafh/p_1A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_1A').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_1B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_1B').innerText = data);
+
+            ///////////////////////////////////////////
+
+             fetch('files/res/Electronic/Pargrafh/p_2A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_2A').innerText = data);
+
+             fetch('files/res/Electronic/Pargrafh/p_2B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_2B').innerText = data);
+
+             fetch('files/res/Electronic/Pargrafh/p_3A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_3A').innerText = data);
+
+             fetch('files/res/Electronic/Pargrafh/p_3B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_3B').innerText = data);
+
+             fetch('files/res/Electronic/Pargrafh/p_3C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_3C').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_4A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_4A').innerText = data);
+            
+             fetch('files/res/Electronic/Pargrafh/p_4B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_4B').innerText = data);
+            
+             fetch('files/res/Electronic/Pargrafh/p_4C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_4C').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_5A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_5A').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_5B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_5B').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_5C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_5C').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_6A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_6A').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_6B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_6B').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_7A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_7A').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_7B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_7B').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_7C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_7C').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_8A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_8A').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_8B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_8B').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_8C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_8C').innerText = data);
+
+             fetch('files/res/Electronic/Pargrafh/p_9A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_9A').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_9B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_9B').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_9C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_9C').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_10A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_10A').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_10B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_10B').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/p_10C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_10C').innerText = data);
+
+            ////////////////////////////////////////////
+
+            // Load the text content for each paragraph
+            fetch('files/res/Electronic/Pargrafh/j_1_p.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('j_1_p').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/j_2_p.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('j_2_p').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/j_3_p.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('j_3_p').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/j_3_pI.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('j_3_pI').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/j_3_pII.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('j_3_pII').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/j_4_p.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('j_4_p').innerText = data);
+            
+            fetch('files/res/Electronic/Pargrafh/j_5_p.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('j_5_p').innerText = data);
+
+            fetch('files/res/Electronic/Pargrafh/j_5_pI.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('j_5_pI').innerText = data);
+            
+        }
 
         loadtext()
         loadstruct()
-        loadTitles()
         loadphoto()
-
-
+        loadPergrafh()
   
