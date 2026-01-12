@@ -484,8 +484,8 @@
         </div>
     </div>
        <div id="lists">
-           <div onclick="spaceGameFetch('Space fight.html')" class="contenner-icon" id="space-game">
-    <img class="icons" src="space fiht.png" alt="">
+           <div onclick="spaceGameFetch('files/res/Space fight.html')" class="contenner-icon" id="space-game">
+    <img class="icons" src="files/res/icon/space fiht.png" alt="">
     <h2>Space Fight</h2>
 </div>
 <div onclick="spaceGameFetch('Car game.html')" class="contenner-icon" id="space-game">
@@ -535,14 +535,12 @@ function spaceGameFetch(url){
                 document.getElementById("up").addEventListener("touchend", () => sendKey(38,"keyup"));
                 
                 document.getElementById("down").addEventListener("touchstart", () => sendKey(40)); 
-                document.getElementById("down").addEventListener("touchend", () => send
+                document.getElementById("down").addEventListener("touchend", () => sendKey(40,"keyup"));
 
-                loadGameList();
 
                 </script>
     
 </html>
-
 
 
 
