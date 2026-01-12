@@ -3,546 +3,412 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gameing Ishwor</title>
+    <title>Rai Ishwor</title>
+    <meta name="description" content="About Ishwor Rai also known as Sachin">
+    <meta name="keywords" content="thulung ishwor,thulung rai,ishwor rai, sachin rai, sachin, ishwor, rai, electnic, hackhin, robotic, nepali">
+    <meta name="author" content="Ishwor">
+ 
 </head>
-<style>
-    body{
-    margin: 0;
-     background-color: black;
-     color: white;
-     width: 70pc;
-     height: 300pc;
-     border: 1px solid green;
-     display: block;
-     justify-self: center;
-     justify-content: center;
- 
- 
-  }
-  #top {
-    margin: 0;
-    margin-top: 5px;
-    background-color: rgba(255, 255, 255,0.27);
-    height: 3pc;
-    width: 70pc;
-    display: flex;
-     justify-self: center;
-     justify-content: left;
-   position: fixed;
-   transition: ;
-   transition: box-shadow 1.2s,  background-color 1s ease, border-radius 1s ease ;
-   
- 
-  }
-  #logo{
-   margin: 0;
-   padding: 10px;
-   margin-left: 10px;
-   margin-right: 15px;
-   font-size: 25px;
-  }
-  table{
-    margin: 0;
-    margin-left: 5pc;
-    border-collapse: separate;
-    width: 38pc;
-    height: 3pc;
-  }
-  th{
-    font-size: 1.3pc;
-     text-align: center;
-     padding: 4px;
-     margin-right: 5px;
-     color: gold;
-     transition-duration: 0.5s;
-     transition-property: background-color, color ;
-  }
- th:hover{
-   background-color: brown;
-   color: white;
- }
- #game{
-    background-color: brown;
- }
- 
- #second {
-   margin: 0;
-   margin-top: 5pc;
-   border: 1px solid red;
-   background-color: rgba(255, 0, 0,0.2);
-   height: 280pc;
-   width: 68pc;
-   display: block;
-    justify-self: center;
-    justify-content: center;
- }
-  
-#display-main{
-   margin: 0;
-   height: 35pc;
-   width: 68pc;
-   border: 1px solid wheat;
-   background-color: rgba(0,255, 0,0.3);
+<link rel="stylesheet" href="style.css">
 
-   display: grid;
-   text-align: center;
-   justify-self: center;
-   justify-content: center;
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
-
-
- #game-screen {
-   margin: auto;
-   padding: 10px;
-   width: 45pc;
-   height: 27pc;
-   border-radius: 5%;
-   object-fit: cover;
- }
-
- #lists{
-    overflow:hidden;
-    flex-wrap: wrap;
-   margin: 0;
-   margin-top: 30px;
-   padding: 25px;
-   border: 1px solid wheat;
-    display: inline-flex;
-   height: auto;
-   width: 65pc;
-   justify-content: center;
- 
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
- .contenner-icon{
-    height: 15pc;
-    width: 18pc;
-    margin: 15px;
-    border: 1px solid silver;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    box-shadow: 1px 1px 15px blue;
-    transition: box-shadow 1s;
-
- }
- .contenner-icon:hover{
-    box-shadow: 1px 1px 35px 5px blue;
-
- }
- .icons{
-    height: 10pc;
-    width: 15pc;
-    border: 1px solid seashell;
-
-
- }
- /*
- #contennerC{
-   margin: 0;
-   margin-top: 10px;
-   padding: 7px;
-   height: 32pc;
-   /* border: 1px solid white; */
- 
-   width: 67pc;
-   display: inline-flex;
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
- .pic-gbl{
-   border-radius: 20px;
- }
- #sub-A{
-   margin: 0;
-   margin-right: 10px;
-   padding: 10px;
-   /* border: 1px solid gainsboro; */
-   height: 32pc;
-   width: 60%;
-   display: inline-flex;
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
- #sub-B{
-   margin: 0;
-   margin-right: 10px;
-   padding: 10px;
-   /* border: 1px solid gainsboro; */
-   height: 27pc;
-   width: 40%;
-   display: inline-flex;
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
- #contennerD{
-   margin: 0;
-   margin-top: 50px;
-   padding: 7px;
-   height: 37pc;
-   /* border: 1px solid white; */
- 
-   width: 67pc;
-   display: inline-flex;
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
- #sub-C{
-   margin: 0;
-   margin-right: 10px;
-   padding: 10px;
-   /* border: 1px solid gainsboro; */
-   height: 27pc;
-   width: 40%;
-   display: inline-flex;
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
- #sub-D{
-   margin: 0;
-   margin-right: 10px;
-   padding: 10px;
-   /* border: 1px solid gainsboro; */
-   height: 35pc;
-   width: 60%;
-   display: inline-flex;
-   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- } */
- 
- #last {
-   margin: 0;
-   margin-top: 15px;
-   padding: 35px;
-   border: 1px solid gold;
-   background-color: silver;
-   height: 12pc;
-   width: 66pc;
-   display: flex;
-   justify-self: left;
-    justify-content: left;
- 
- }
- .last-pos{
-   margin: 0;
-   padding: 0;
-   width: 60pc;
-   height: 12pc;
-   /* background-color: rgba(0, 0, 0, 0.2); */
- 
-   border-right: 2px solid black;
-   padding: 5px;
-   color: black;
- }
- .texts{
-   margin: 2px;
-   margin-right: 10px;
-   font-weight: bold;
- 
- }
- h2{
-   display: inline-block;
- }
- h3{
-   display: inline-block;
-   margin: 0;
- }
-
- @media (max-width: 800px) {
-  body{
-    width: 375px;
-    height: auto;
-    justify-content: center;
-    justify-items: center;
-  }
-
-  #top {  
-    margin: 0;
-    margin-top: 5px;
-    background-color: rgba(255, 255, 255,0.27);
-    height: 2.9pc;
-    width: 375px;
-    display: flex;
-     justify-self: center;
-     justify-content: left;
-   position: fixed;
-   align-items: center;
-   transition: box-shadow 1.2s,  background-color 1s ease, border-radius 1s ease ;
-   
- 
-  }
-  #logo{
-   margin: 0;
-   margin-left: 10px;
-   font-size: 13px;
-  }
-  table{
-    margin: 0;
-    border-collapse: separate;
-    width: 20pc;
-    height: 3pc;
-    margin-left: 0.5pc;
-
-  
-  }
-  th{
-    font-size: 0.7pc;
-     text-align: center;
-     color: gold;
-     transition-duration: 0.5s;
-     transition-property: background-color, color ;
-  }
-  #second {
-    margin: 0;
-    margin-top: 5pc;
-    border: 1px solid red;
-    background-color: rgba(255, 0, 0,0.2);
-    height: auto;
-    width: 99%;
-    display: block;
-     justify-self: center;
-     justify-content: center;
-  }
-   
- #display-main{
-    margin: 0;
-    height: 30pc;
-    width: 98%;
-    border: 1px solid wheat;
-    background-color: rgba(0,255, 0,0.3);
- 
-    display: grid;
-    text-align: center;
-    justify-self: center;
-    justify-content: center;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
- 
- 
-  #game-screen {
-    margin: auto;
-    padding: 10px;
-    width: 99%;
-    height: 18pc;
-    border-radius: 5%;
-    object-fit: cover;
-  }
- 
-  #lists{
-     overflow:hidden;
-     flex-wrap: wrap;
-    margin: 0;
-    margin-top: 30px;
-    border: 1px solid wheat;
-     display: inline-flex;
-    height: auto;
-    width: 85%;
-    justify-content: center;
-  
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  .contenner-icon{
-     height: 13pc;
-     width: 15pc;
-     border: 1px solid silver;
-     text-align: center;
-     justify-content: center;
-     justify-items: center;
-     box-shadow: 1px 1px 15px blue;
-     transition: box-shadow 1s;
- 
-  }
-  .contenner-icon:hover{
-     box-shadow: 1px 1px 35px 5px blue;
- 
-  }
-  .icons{
-     height: 10pc;
-     width: 15pc;
-     border: 1px solid seashell;
- 
- 
-  }
-  /*
-  #contennerC{
-    margin: 0;
-    margin-top: 10px;
-    padding: 7px;
-    height: 32pc;
-    /* border: 1px solid white; */
-  
-    width: 67pc;
-    display: inline-flex;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  .pic-gbl{
-    border-radius: 20px;
-  }
-  #sub-A{
-    margin: 0;
-    margin-right: 10px;
-    padding: 10px;
-    /* border: 1px solid gainsboro; */
-    height: 32pc;
-    width: 60%;
-    display: inline-flex;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  #sub-B{
-    margin: 0;
-    margin-right: 10px;
-    padding: 10px;
-    /* border: 1px solid gainsboro; */
-    height: 27pc;
-    width: 40%;
-    display: inline-flex;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  #contennerD{
-    margin: 0;
-    margin-top: 50px;
-    padding: 7px;
-    height: 37pc;
-    /* border: 1px solid white; */
-  
-    width: 67pc;
-    display: inline-flex;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  #sub-C{
-    margin: 0;
-    margin-right: 10px;
-    padding: 10px;
-    /* border: 1px solid gainsboro; */
-    height: 27pc;
-    width: 40%;
-    display: inline-flex;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  #sub-D{
-    margin: 0;
-    margin-right: 10px;
-    padding: 10px;
-    /* border: 1px solid gainsboro; */
-    height: 35pc;
-    width: 60%;
-    display: inline-flex;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  } */
-  
-  #last {
-    margin: 0;
-    margin-top: 15px;
-    padding: 35px;
-    border: 1px solid gold;
-    background-color: silver;
-    height: 12pc;
-    width: 66pc;
-    display: flex;
-    justify-self: left;
-     justify-content: left;
-  
-  }
-  .last-pos{
-    margin: 0;
-    padding: 0;
-    width: 60pc;
-    height: 12pc;
-    /* background-color: rgba(0, 0, 0, 0.2); */
-  
-    border-right: 2px solid black;
-    padding: 5px;
-    color: black;
-  }
-  .texts{
-    margin: 2px;
-    margin-right: 10px;
-    font-weight: bold;
-  
-  }
-  h2{
-    display: inline-block;
-  }
-  h3{
-    display: inline-block;
-    margin: 0;
-  }
-
- }
-</style>
-
-<body>
+<body >
     <div id="top"></div>
+    <div id="top_second"></div>
+    <div id="top_second_nev">
+        <h2 id="logo_shows" onclick="window.location.href = 'index.html';">𝖗𝖆𝖎 𝖎𝖘𝖍𝖜𝖔𝖗</h2>
+         
+        <button onclick="hide_meuns()" id="menu_shows">×</button>
+        <button onclick="show_meuns()" id="menu_hide">≡</button>
+
+    </div>
+
     <div id="second">
-       <H1>Games</H1>
-       <div id="display-main">
-        
-        <iframe id="game-screen" frameborder="0"></iframe>
-        <div>
-            <button id="up"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
-            <button id="down" style="transform: rotate(180deg);" onclick="keyPress('ArrowDown')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
-            <button id="space"> —------- </button>
-            <button id="left" style="transform: rotate(-90deg);" onclick="keyPress('ArrowLeft')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
-            <button id="right" style="transform: rotate(90deg)" onclick="keyPress('ArrowRight')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
-            
+        <div id="contennerA">
+            <h1 id="head_line">Hello' I am Ishwor Rai,
+            </h1>
+            <h1 id="sub_head" style="margin: 0;">also known as Sachin.</h1>
+            <img id="profile-pic">
+        </div>
+        <div id="contennerB">
+            <p class="sub_head2">Introduction</p><br>
+            <p id="p1"></p>
+            <p class="sub_head2">The Bigbang</p>
 
         </div>
+        <div id="contennerC">
+            <div id="sub-A" >
+                <p id="p2"></p>
+            </div>
+            <div id="sub-B">
+                <img class="pic-gbl" id="pic1" alt="loading">
+            </div>
+        </div>
+        <div id="contennerD">
+            <div id="sub-C" >
+                <img class="pic-gbl"  id="pic2" alt="loading">
+            </div>
+            <div id="sub-D">
+                <p id="p3"></p>
+            </div>
+        </div>
+
+
+
+         <div id="contennerE">
+            <p id="p4"></p>
+
+        </div>
+
+        <div id="contennerF">
+        <h1>My Journe</h1>
+        <div id="time_line_bar">
+            <canvas id="time_line"  width="600"></canvas>
+
+
+        <div id="j_1">
+            <h2>Robotic & Electronics</h2>
+            <p id="j_1_p"></p>
+            <a href="Projects.html"><button>Projects</button></a>
+
+
+        </div>
+
+        <div id="j_2">
+            <h2>IoT</h2>
+            <img class="Jimg" src="photo for web/contects/pic/pic_8A.jpg" alt="Locading..">
+
+            <p id="j_2_p"></p>
+            <img class="Jimg" src="photo for web/contects/pic/pic_8D.jpg" alt="Locading..">
+           
+            <a href="tryIoT.html" target="_blank"><button>IoT Demo</button></a>
+
+
+        </div>
+
+        <div id="j_3">
+            <h2>Web Degin</h2>
+             <p id="j_3_p"></p>
+
+            <img class="Jimg" src="photo for web/contects/pic/computer.png" alt="Locading..">
+                         <p id="j_3_pI"></p>
+
+            <img class="Jimg" src="photo for web/contects/pic/code.png" alt="Locading..">
+            <p id="j_3_pII"></p>
+
+            <a style="color: cyan;" href="files/discount.html" target="_blank">Click me</a>
+            <img class="Jimg" src="photo for web/contects/pic/dicaunt_1.png" alt="Locading..">
+            <img class="Jimg" src="photo for web/contects/pic/dicaunt_2.png" alt="Locading..">
+
+        </div>
+
+        <div id="j_4">
+            <h2>Buliding a game with Scratch</h2>
+             
+
+            <img class="Jimg" src="photo for web/contects/pic/scratch_1.png" alt="Locading..">
+                         <p id="j_4_pI"></p>
+
+            <img class="Jimg" src="photo for web/contects/pic/scratch_2.png" alt="Locading..">
+            <p id="j_4_p"></p>
+            <img class="Jimg" src="photo for web/contects/pic/scratch_3.png" alt="Locading..">
+              <a href="Game.html" target="_blank"><button>Gaming Mode</button></a>
+
+        </div>
+
+        <div id="j_5">
+            <h2>Python</h2>
+             <p id="j_5_p"></p>
+
+
+            <img class="Jimg" src="photo for web/contects/pic/dice_1.png" alt="Locading..">
+             <p id="j_5_pI" ></p>
+
+            <img class="Jimg" src="photo for web/contects/pic/multi_2.png" alt="Locading..">
+            <img class="Jimg" src="photo for web/contects/pic/age_2.png" alt="Locading..">
+
+        </div>
+
+        <div id="j_6">
+            <h2>My Experiment</h2>
+             <video autoplay loop muted>
+                <source src="all combilnd.mp4" type="video/mp4">
+            </video>
+            <div style="border-bottom: 1px solid white;">
+                <P>My videos are available on YouTube, where I share content about Robotics and Electronics.
+Just search for Hackhin!
+
+The name ‘Hackhin’ comes from a mix of two inspirations: half from my childhood favorite YouTuber, and half from my own name, Sachin together forming Hin.
+
+On this channel, I upload both shorts and long-form videos to make learning fun and accessible.
+You can check it out directly by clicking here: <a href="https://youtube.com/@mreh99?si=8IxDgIQ32CdJtEhB">Click Me</a> it will redirect you to my channel.
+                </P>
+            </div>
+            <div >
+                
+            <h2>Contact</h2>
+            <P><b>Location: </b>Jorpati, Nayapasti</P>
+             <P><b>Email: </b><i>thulungraiishwor@gmail.com</i></P>
+                
+        </div>
+        </div>
+
+
     </div>
-       <div id="lists">
-           <div onclick="spaceGameFetch('files/res/Space fight.html')" class="contenner-icon" id="space-game">
-    <img class="icons" src="files/res/icon/space fiht.png" alt="">
-    <h2>Space Fight</h2>
+        
+
+        
 </div>
-<div onclick="spaceGameFetch('Car game.html')" class="contenner-icon" id="space-game">
-    <img class="icons" src="Screenshot 2025-04-22 214535.png" alt="">
-    <h2>Car Circule</h2>
-</div>
-<div onclick="spaceGameFetch('Hunter Badman.html')" class="contenner-icon" id="space-game">
-    <img class="icons" src="hunter batman.png" alt="">
-    <h2>Space Fight</h2>
-</div>
-<div onclick="spaceGameFetch('Identify num.html')" class="contenner-icon" id="space-game">
-    <img class="icons" src="maze game.png" alt="">
-    <h2>Car Circule</h2>
-</div>
-       </div>
+
+         
+        
+    <h2 id="link_title">Let's stay in touch</h2>
+
+    <div id="social_medias">
+
+        <img onclick="window.location.href = 'https://www.youtube.com/@Sachinht6';" src="https://yt3.googleusercontent.com/yfL9jT-viEJd27Vb-qcP9DGODRQqwjXx9ih5yNezscHga2f__S4paZnjDtmc8qGFNvXMsiFb-g=s160-c-k-c0x00ffffff-no-rj" alt="">
+        <img onclick="window.location.href = 'https://www.facebook.com/share/16GiCHuqgH/';" src="https://i.pinimg.com/originals/36/a5/8c/36a58cda203979ba2b7b448fce2ea422.jpg" alt="">
+        <img onclick="window.location.href = 'https://www.linkedin.com/in/sachin-rai-a43769251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app';" src="https://seekvectors.com/files/download/Linkedin-background-black-01.jpg" alt="">
+        <img onclick="window.location.href = 'https://www.facebook.com/share/16GiCHuqgH/';" src="https://static.vecteezy.com/system/resources/thumbnails/015/730/552/small_2x/eps10-white-camera-abstract-line-art-icon-isolated-on-black-background-social-media-outline-symbol-in-a-simple-flat-trendy-modern-style-for-your-website-design-logo-and-mobile-application-vector.jpg" alt="">
         
     </div>
+</div>
+
 
 
 </body>
-    <script src="server.js"></script>
-    <script src="tops.js" ></script>
-    <script>
-        
+    
 
-function spaceGameFetch(url){
-  document.getElementById('game-screen').src = url;
+<script>
+    let j1 = document.getElementById("j_1");
+    let j2 = document.getElementById("j_2");
+    let j3 = document.getElementById("j_3");
+    let j4 = document.getElementById("j_4");
+    let j5 = document.getElementById("j_5");
+        let j6 = document.getElementById("j_6");
+
+// Adjust canvas width to match page width
+  const canvas = document.getElementById("time_line");
+  const ctx = canvas.getContext("2d");
+
+  const centerX = canvas.width / 2; 
+  const centerY = canvas.height / 2;
+
+  // Set glow effect
+  ctx.shadowBlur = 20;          // intensity of glow
+  ctx.shadowColor = "gold";     // glow color
+
+    
+    function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+    // Full page width including scrollable content
+let pageWidth = document.documentElement.scrollWidth;
+let maxL = 0;
   
+  let refreshed = false;
+
+window.addEventListener("resize", function() {
+  if (window.innerWidth >= 700 && window.innerWidth <= 1023 && !refreshed) {
+    refreshed = true;   // prevent multiple refreshes
+    location.reload();  // refresh the page
+  } 
+  if (window.innerWidth >= 1025 && !refreshed) {
+    refreshed = true;   // prevent multiple refreshes
+    location.reload();  // refresh the page
+  }
+});
+
+  async function drawLineDown() {
+  let y = 0;
+  let a = 0.0;
+  let b = 0.0;
+  let c = 0.0;
+  let d = 0.0;
+    let e = 0.0;
+    let f = 0.0;
+    if (pageWidth < 1024) {
+        maxL = 2750;
+        canvas.height = 2750;
+        }else {
+        canvas.height = 2350;
+        maxL = 2350;
+    }
+  
+   await sleep(100);
+    
+
+
+    
+  while (y < maxL) {
+    y += 2;
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
+
+    ctx.beginPath(); 
+  ctx.arc(centerX, 5, 5, 0, 2 * Math.PI);
+  ctx.fillStyle = "white"; 
+  ctx.fill();
+
+   ctx.moveTo(centerX-25, 5);
+  ctx.lineTo(centerX+25, 5);
+  ctx.strokeStyle = "white";  
+  ctx.lineWidth = 4;
+  ctx.stroke();
+
+        ctx.beginPath(); 
+        ctx.arc(centerX, 1, 5, 0, 2 * Math.PI);
+        ctx.fillStyle = "white"; 
+        ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(centerX, 0);
+    ctx.lineTo(centerX, y);
+    ctx.strokeStyle = "white";  
+    ctx.lineWidth = 4;
+    ctx.stroke();
+
+    if (y > 80){
+        ctx.beginPath(); 
+        ctx.arc(centerX, 80, 5, 0, 2 * Math.PI);
+        ctx.fillStyle = "white"; 
+        ctx.fill();
+
+        ctx.moveTo(centerX, 80);
+        ctx.lineTo(centerX+20, 80);
+        ctx.strokeStyle = "white";  
+         ctx.lineWidth = 4;
+        ctx.stroke();
+
+        if (a < 1){
+            j1.style.opacity = a;
+        }
+        a += 0.01;
+
+    }
+    
+     if (y > 220){
+        ctx.beginPath(); 
+        ctx.arc(centerX, 220, 5, 0, 2 * Math.PI);
+        ctx.fillStyle = "white"; 
+        ctx.fill();
+
+        ctx.moveTo(centerX, 220);
+  ctx.lineTo(centerX-25, 220);
+    ctx.strokeStyle = "white";
+    ctx.lineWidth = 4;
+    ctx.stroke();
+    if (b < 1){
+            j2.style.opacity = b;
+        }
+        b += 0.01;
+
+
+    }
+     if (y > 500){
+        ctx.beginPath(); 
+        ctx.arc(centerX, 500, 5, 0, 2 * Math.PI);
+        ctx.fillStyle = "white"; 
+        ctx.fill();
+
+        ctx.moveTo(centerX, 500);
+  ctx.lineTo(centerX+25, 500); 
+    ctx.strokeStyle = "white";
+    ctx.lineWidth = 4;
+    ctx.stroke();
+    if (c < 1){
+            j3.style.opacity = c;
+        }
+        c += 0.01;
+
+    }
+     if (y > 850){
+        ctx.beginPath(); 
+        ctx.arc(centerX, 850, 5, 0, 2 * Math.PI);
+        ctx.fillStyle = "white"; 
+        ctx.fill();
+
+        ctx.moveTo(centerX, 850);
+  ctx.lineTo(centerX-25, 850);
+    ctx.strokeStyle = "white";
+    ctx.lineWidth = 4;
+    ctx.stroke();
+
+    if (d < 1){
+            j4.style.opacity = d;
+        }
+        d += 0.01;
+
+    } 
+    
+     if (y >= 1600){
+        ctx.beginPath(); 
+        ctx.arc(centerX, 1600, 5, 0, 2 * Math.PI);
+        ctx.fillStyle = "white"; 
+        ctx.fill();
+
+        ctx.moveTo(centerX, 1600);
+  ctx.lineTo(centerX+25, 1600);
+    ctx.strokeStyle = "white";
+    ctx.lineWidth = 4;
+    ctx.stroke();
+    if (e < 1){
+            j5.style.opacity = e;
+        }
+        e += 0.01;
+
+     }
+    if (y >= 1800){
+        ctx.beginPath(); 
+        ctx.arc(centerX, 1800, 5, 0, 2 * Math.PI);
+        ctx.fillStyle = "white"; 
+        ctx.fill();
+
+        ctx.moveTo(centerX, 1800);
+  ctx.lineTo(centerX-25, 1800);
+    ctx.strokeStyle = "white";
+    ctx.lineWidth = 4;
+    ctx.stroke();
+    if (f < 1){
+            j6.style.opacity = f;
+        }
+        f += 0.01;
+
+     
+    }
+    
+        ctx.closePath();
+
+    await sleep(2);
+
+  }
+   ctx.beginPath(); 
+        ctx.arc(centerX, maxL, 5, 0, 2 * Math.PI);
+        ctx.fillStyle = "white"; 
+        ctx.fill();
+
+        ctx.moveTo(centerX-25, maxL);
+  ctx.lineTo(centerX+25, maxL);
+    ctx.strokeStyle = "white";
+    ctx.lineWidth = 4;
+    ctx.stroke();
 }
 
-        function sendKey(keyCode, type="keydown") { 
-            let event = new KeyboardEvent(type, { 
-                keyCode: keyCode, which: keyCode }); 
-                document.querySelector("iframe").contentWindow.document.dispatchEvent(event);
-                
-                } 
-                document.getElementById("left").addEventListener("touchstart", () => sendKey(37));
-                document.getElementById("left").addEventListener("touchend", () => sendKey(37,"keyup")); 
-                
-                document.getElementById("right").addEventListener("touchstart", () => sendKey(39)); 
-                document.getElementById("right").addEventListener("touchend", () => sendKey(39,"keyup")); 
-                
-                document.getElementById("space").addEventListener("touchstart", () => sendKey(32));
-                document.getElementById("space").addEventListener("touchend", () => sendKey(32,"keyup")); 
-                
-                document.getElementById("up").addEventListener("touchstart", () => sendKey(38)); 
-                document.getElementById("up").addEventListener("touchend", () => sendKey(38,"keyup"));
-                
-                document.getElementById("down").addEventListener("touchstart", () => sendKey(40)); 
-                document.getElementById("down").addEventListener("touchend", () => sendKey(40,"keyup"));
+  const target = document.getElementById("contennerF");
+   let hasRun = false; const observer = new IntersectionObserver((entries) => { 
+    entries.forEach(entry => { 
+        if (entry.isIntersecting && !hasRun) {
+             hasRun = true;
+                drawLineDown(); // 👉 call your function here 
+             observer.unobserve(target); // stop observing 
+             } }); 
+            }); 
+
+    observer.observe(target);
+  
+
+</script>
 
 
-                </script>
     
+    <script src="server.js" ></script>
+    <script src="tops.js" ></script>
 </html>
-
-
-
-
-
