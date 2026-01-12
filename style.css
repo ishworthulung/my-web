@@ -2,7 +2,7 @@
    margin: 0;
      background-color: #1A001A;
     color: white  ; 
-    border: 1px solid black;
+    border: 1px solid #1A001A;
     width: 1110px;
     height: auto;
     display: block;
@@ -21,6 +21,8 @@
     justify-self: center;
     justify-content: left;
   position: fixed;
+  overflow: hidden;
+  z-index: 10;
   transition: box-shadow 1.2s,  background-color 1s ease, border-radius 1s ease ;
   }
    #top_second{
@@ -76,9 +78,8 @@ p{
 #second {
   margin: 0;
   margin-top: 5pc;
-  border: 1px solid red;
   background-color: rgba(255, 0, 0,0.2);
-  height: 192pc;
+  height: 273pc;
   width: 99%;
   display: block;
    justify-self: center;
@@ -202,10 +203,218 @@ p{
 
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+#contennerF{
+  text-align: center;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  border: 1px solid silver ;
+  background-color: black;
+  margin: 0;
+  margin-top: 30px;
+  padding: 10px;
+  height: 100%;
+  width: 98%;
+  border-radius: 30px;
+}
+#contennerF h1{
+  margin: 0;
+  padding: 10px;
+  font-size: 3.5pc;
+  color: cyan;
+}
 #link_title{
   text-align: center;
   margin-top: 250px;
 }
+#time_line{
+  
+  top: 0; left: 0;
+   width: 100%;
+    height: 100%;
+display: block; 
+}
+#time_line2{
+  
+  top: 0; left: 0;
+   width: 100%;
+    height: 100%;
+display: block;
+}
+#time_line_bar{
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+#j_1{
+  width: 400px;
+  position: absolute;
+  z-index: 1;
+    box-shadow: 1px 1px 50px gold;
+
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 30px;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 10px;
+        top: 10px;
+      left: 605px;
+  opacity: 0;
+}
+#j_1 a button{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2pc;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: cyan;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#j_2{
+  width: 400px;
+  position: absolute;
+  z-index: 1;
+    box-shadow: 1px 1px 50px gold;
+
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 30px;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 10px;
+        top: 280px;
+      left: 40px;
+      opacity: 0;
+}
+#j_2 a button{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2pc;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: cyan;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.Jimg{
+  height: 250px;
+  width: 350px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+#j_4{
+  width: 400px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 1px 1px 50px gold;
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 30px;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 10px;
+        top: 1300px;
+      left: 40px;
+      opacity: 0;
+}
+#j_4 a button{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2pc;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: cyan;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+#j_3{
+  width: 400px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 1px 1px 50px gold;
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 30px;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 10px;
+        top: 400px;
+      left: 605px;
+  opacity: 0;
+    }
+
+
+#j_5{
+  width: 400px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 1px 1px 50px gold;
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 30px;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 10px;
+        top: 2350px;
+      left: 605px;
+opacity: 0;
+}
+#j_5_pI{
+  text-align: left;
+}
+
+
+#j_6{
+  width: 400px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 1px 1px 50px gold;
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 30px;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 10px;
+        top: 2750px;
+      left: 40px;
+opacity: 0;
+}
+
+#j_6 video{
+  margin: 0;
+  width: 340px;
+  height: 550px;
+  border-radius: 10% 10%;
+}
+#j_6 h2{
+  font-size: 1.8pc;
+}
+#j_6 b{
+  font-size: 1.6pc;
+}
+#j_6 div{
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 50px;
+}
+
 
 #social_medias{
   bottom: 0px;
@@ -214,7 +423,7 @@ p{
   margin-top: 100px;
   margin-bottom: 30px;
   padding: 10px;
-  height: 8pc;
+  height: 5pc;
   width: 98%;
   align-content: center;
   justify-content: center;
@@ -411,6 +620,212 @@ th:hover{
   
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
+  
+#contennerF{
+  text-align: center;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  border: 1px solid silver ;
+  background-color: black;
+  margin: 0;
+  margin-top: 30px;
+  padding: 10px;
+  height: 100%;
+  width: 98%;
+  border-radius: 30px;
+}
+#contennerF h1{
+  margin: 0;
+  padding: 10px;
+  font-size: 3.5pc;
+  color: cyan;
+}
+#link_title{
+  text-align: center;
+  margin-top: 250px;
+}
+#time_line{
+  
+  top: 0; left: 0;
+   width: 100%;
+    height: 100%;
+display: block; 
+}
+
+#time_line_bar{
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+#j_1{
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+    box-shadow: 1px 1px 50px gold;
+
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 0;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 5px;
+        top: 5px;
+      left: 455px;
+  opacity: 0;
+}
+#j_1 a button{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2pc;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: cyan;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#j_2{
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+    box-shadow: 1px 1px 50px gold;
+
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 0;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 5px;
+        top: 40px;
+      left: 10px;
+      opacity: 0;
+}
+#j_2 a button{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2pc;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: cyan;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.Jimg{
+  height: 170px;
+  width: 270px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+#j_4{
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 1px 1px 50px gold;
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 0;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 5px;
+        top: 860px;
+      left: 10px;
+      opacity: 0;
+}
+#j_4 a button{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2pc;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: cyan;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+#j_3{
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 1px 1px 50px gold;
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 0;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 5px;
+        top: 350px;
+      left: 455px;
+  opacity: 0;
+    }
+
+
+#j_5{
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 1px 1px 50px gold;
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 0;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 5px;
+        top: 1980px;
+      left: 455px;
+opacity: 0;
+}
+#j_5_pI{
+  text-align: left;
+}
+
+
+#j_6{
+  width: 300px;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 1px 1px 50px gold;
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 0;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 5px;
+        top: 2080px;
+      left: 10px;
+opacity: 0;
+}
+
+#j_6 video{
+  margin: 0;
+  width: 240px;
+  height: 450px;
+  border-radius: 10% 10%;
+}
+#j_6 h2{
+  font-size: 1.8pc;
+}
+#j_6 b{
+  font-size: 1.6pc;
+}
+#j_6 div{
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 50px;
+}
   #social_medias{
     bottom: 0px;
     display: flex;
@@ -450,6 +865,7 @@ th:hover{
     justify-items: center;
     align-self: center;
   }
+
   
 
   #top {  
@@ -470,7 +886,7 @@ th:hover{
     align-items: center;
     position: fixed;
     padding: 0;
-   
+    z-index: 10;
   }
   #logo_shows{
     margin: 0;
@@ -499,7 +915,7 @@ th:hover{
     padding: 0;
     opacity: 0;
     transition: height 0.5s ease, opacity 0.5s ease;
-
+    z-index: 10;
   }
   #top_second.close {
     height: 0;
@@ -581,7 +997,9 @@ th:hover{
 
   #second{
     width: 100%;
-    height: 100%;
+    height:100%;
+        padding-left: 25px;
+
 
   }
 
@@ -688,4 +1106,213 @@ th:hover{
   box-shadow: 1px 1px 20px  rgba(0, 0, 255,1);
 
 }
+#contennerF{
+  text-align: center;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  border: 1px solid silver ;
+  background-color: black;
+  margin: 0;
+  margin-top: 30px;
+  padding: 30px;
+  height: 100%;
+  width: 91%;
+  border-radius: 30px;
+  overflow: hidden;
+  z-index: 5;
+}
+#contennerF h1{
+  margin: 0;
+  padding: 10px;
+  font-size: 3.5pc;
+  color: cyan;
+}
+#link_title{
+  text-align: center;
+  margin-top: 250px;
+}
+#time_line{
+  
+  top: 0; left: 0;
+   width: 100%;
+    height: 100%;
+display: none; 
+
+}
+#time_line_bar{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+#j_1{
+  width: 90%;
+  position: relative;
+  z-index: 2;
+    box-shadow: 1px 1px 50px gold;
+
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 30px;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 10px;
+        top: 0;
+      left: 0;
+  opacity: 0;
+}
+#j_1 a button{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2pc;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: cyan;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+#j_2{
+  width: 90%;
+  position: relative;
+  z-index: 1;
+    box-shadow: 1px 1px 50px gold;
+
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 30px;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 10px;
+        top: 0;
+      left: 0;
+      opacity: 0;
+}
+#j_2 a button{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2pc;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: cyan;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.Jimg{
+  height: 200px;
+  width: 300px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+#j_4{
+  width: 90%;
+  position: relative;
+  z-index: 1;
+  box-shadow: 1px 1px 50px gold;
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 30px;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 10px;
+        top: 0;
+      left: 0;
+      opacity: 0;
+}
+#j_4 a button{
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 1.2pc;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  color: cyan;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+#j_3{
+  width: 90%;
+  position: relative;
+  z-index: 1;
+  box-shadow: 1px 1px 50px gold;
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 30px;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 10px;
+        top: 0;
+      left: 0;
+  opacity: 0;
+    }
+
+
+#j_5{
+  width: 90%;
+  position: relative;
+  z-index: 1;
+  box-shadow: 1px 1px 50px gold;
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 30px;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 10px;
+        top: 0;
+      left: 0;
+opacity: 0;
+}
+#j_5_pI{
+  text-align: left;
+}
+
+
+#j_6{
+  width: 90%;
+  position: relative;
+  z-index: 1;
+  box-shadow: 1px 1px 50px gold;
+  border: 2px solid cyan;
+    margin: 0;
+  margin-top: 30px;
+  border-radius: 20px;
+  justify-self: right;
+  text-align: center;
+  padding: 10px;
+        top: 0;
+      left: 0;
+opacity: 0;
+}
+
+#j_6 video{
+  margin: 0;
+  width: 340px;
+  height: 550px;
+  border-radius: 10% 10%;
+}
+#j_6 h2{
+  font-size: 1.8pc;
+}
+#j_6 b{
+  font-size: 1.6pc;
+}
+#j_6 div{
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 50px;
+}
+
 }
