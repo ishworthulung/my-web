@@ -983,16 +983,7 @@ section{
 
 <body>
     <div id="top">
-        <h1 id="logo" onclick="window.location.href = 'index.html';">𝖗𝖆𝖎 𝖎𝖘𝖍𝖜𝖔𝖗</h1>
-        <div id="menu_table">
-            <table >
-            <th  id="elec" onclick="window.location.href = 'Projects.html';" >Projects</th>
-            <th  id="diy" onclick="window.location.href = 'diy_products.html';" >DIY Products</th>
-            <th  id="game" onclick="window.location.href = 'Game.html';" >Game</th>
-             <th  id="prod" onclick="window.location.href = 'diy_products.html';" >Updates</th>
-
-        </table>
-        </div>
+       
     </div>
     <div id="second">
             <div id="top_second"></div>
@@ -1262,6 +1253,16 @@ window.addEventListener('load', fixChatScale);
                 menuAll.classList.add("open");               
 
         }
+        function loadstruct(){
+            fetch('top.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('top').innerHTML = data);
+
+            fetch('top.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('top_second').innerHTML = data);
+           
+        }
         function loadPergrafh(){
             fetch('p_1A.txt')
             .then(response => response.text())
@@ -1376,7 +1377,8 @@ window.addEventListener('load', fixChatScale);
              
         }
 
-        loadPergrafh()
+        loadPergrafh();
+        loadstruct();
       function isTouching(el1, el2) {
     let rect1 = el1.getBoundingClientRect();
     let rect2 = el2.getBoundingClientRect();
@@ -1417,6 +1419,7 @@ window.addEventListener("scroll", checkCollision);
     <!-- <script src="tops.js" ></script> -->
 
 </html>
+
 
 
 
