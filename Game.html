@@ -5,72 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gameing Ishwor</title>
 </head>
-<link rel="stylesheet" href="/style-game.css">
-
+    <link rel="stylesheet" href="style-game.css">
 
 <body>
     <div id="top"></div>
+    <div id="top_second"></div>
+    <div id="top_second_nev">
+        <h2 id="logo_shows" onclick="window.location.href = 'index.html';">𝖗𝖆𝖎 𝖎𝖘𝖍𝖜𝖔𝖗</h2>
+         
+        <button onclick="hide_meuns()" id="menu_shows">×</button>
+        <button onclick="show_meuns()" id="menu_hide">≡</button>
+
+    </div>
     <div id="second">
+       
        <H1>Games</H1>
        <div id="display-main">
         
         <iframe id="game-screen" frameborder="0"></iframe>
-        <div>
-            <button onclick="keyPress('ArrowUp')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
-            <button style="transform: rotate(180deg);" onclick="keyPress('ArrowDown')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
-            <button style="transform: rotate(-90deg);"" onclick="keyPress('ArrowLeft')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
-            <button style="transform: rotate(90deg)" onclick="keyPress('ArrowRight')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
-            <button onclick="keyPress('Space')"><img style="height: 30px; width: 30px;" src="https://th.bing.com/th/id/R.de7038a6c4d8674f21ad3dff5b8abcf5?rik=a%2fUf3DdQn1PjQg&riu=http%3a%2f%2fclipart-library.com%2fnew_gallery%2f202-2027852_arrow-up-icon-png.png&ehk=tlkArlc4PNNmMm0cTMRJrbaGpcCZSTDeekZgp7evpFg%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
-
-        </div>
+        <i>Games are designed for Computer. For Full control, use a keyboard and mouse.</i>
     </div>
-       <div id="lists"></div>
+       <div id="lists">
+           <div onclick="spaceGameFetch('files/res/Space fight.html')" class="contenner-icon" id="space-game">
+    <img class="icons" src="files/res/icon/space fiht.png" alt="">
+    <h2>Space Fight</h2>
+</div>
+<div onclick="spaceGameFetch('Car game.html')" class="contenner-icon" id="space-game">
+    <img class="icons" src="Screenshot 2025-04-22 214535.png" alt="">
+    <h2>Car Circule</h2>
+</div>
+<div onclick="spaceGameFetch('Hunter Badman.html')" class="contenner-icon" id="space-game">
+    <img class="icons" src="hunter batman.png" alt="">
+    <h2>Space Fight</h2>
+</div>
+<div onclick="spaceGameFetch('Identify num.html')" class="contenner-icon" id="space-game">
+    <img class="icons" src="maze game.png" alt="">
+    <h2>Car Circule</h2>
+</div>
+       </div>
+        
+    </div>
+  <h2 id="link_title">Let's stay in touch</h2>
+
+    <div id="social_medias">
+
+        <img onclick="window.location.href = 'https://www.youtube.com/@Sachinht6';" src="https://yt3.googleusercontent.com/yfL9jT-viEJd27Vb-qcP9DGODRQqwjXx9ih5yNezscHga2f__S4paZnjDtmc8qGFNvXMsiFb-g=s160-c-k-c0x00ffffff-no-rj" alt="">
+        <img onclick="window.location.href = 'https://www.facebook.com/share/16GiCHuqgH/';" src="https://i.pinimg.com/originals/36/a5/8c/36a58cda203979ba2b7b448fce2ea422.jpg" alt="">
+        <img onclick="window.location.href = 'https://www.linkedin.com/in/sachin-rai-a43769251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app';" src="https://seekvectors.com/files/download/Linkedin-background-black-01.jpg" alt="">
+        <img onclick="window.location.href = 'https://www.facebook.com/share/16GiCHuqgH/';" src="https://static.vecteezy.com/system/resources/thumbnails/015/730/552/small_2x/eps10-white-camera-abstract-line-art-icon-isolated-on-black-background-social-media-outline-symbol-in-a-simple-flat-trendy-modern-style-for-your-website-design-logo-and-mobile-application-vector.jpg" alt="">
         
     </div>
 
 
-    <div id="last">
-        <div id="right" class="last-pos">
-            <h1 class="texts">Contact</h1>
-            <h2 class="texts">Phone: </h2>
-            <h3 >9803374311</h3>
-            <br>
-            <h2 class="texts">Email: </h2>
-            <h3 >thulungraiishwor@gmail.com</h3>
-        </div>
-        <div id="mid" class="last-pos">
-
-        </div>
-        <div id="left" class="last-pos">
-
-        </div>
-    </div>
-    
 </body>
-    <script src="/server.js"></script>
-    <script src="/tops.js" ></script>
-   <script>
+    <script src="server.js"></script>
+    <script src="tops.js" ></script>
+    <script>
+        
 
 function spaceGameFetch(url){
   document.getElementById('game-screen').src = url;
   
 }
-function loadGameList(){
-    fetch('game_list.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('lists').innerHTML = data);
 
-   
-}
-function keyPress(key) {
-  var iframe = document.getElementById("game-screen");
-  iframe.contentWindow.postMessage({ type: "keyPress", key: key }, "*");
-}
-
-
-
-loadGameList();
-
-</script>
-
+    </script>
+    
 </html>
+
+
+
+
+
