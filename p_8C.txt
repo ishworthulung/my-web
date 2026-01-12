@@ -1,0 +1,8 @@
+
+• What We Learn
+In robotics and electronics, DC is commonly used, but sometimes we need to work with AC, which is more dangerous and cannot be controlled directly from microcontroller boards.
+Relays provide a safe way to control AC outputs using DC signals.
+This project enhances understanding of how to safely handle AC devices while exploring IoT applications.
+IoT is considered one of the top fields in robotics, and this project gives a practical introduction to how the Internet of Things works.
+
+You can try my IoT demo by clicking the button below (requires my secret passkey and project setup). If you don’t have access, you can still watch my demo video by scrolling further down.

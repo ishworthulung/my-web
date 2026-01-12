@@ -1,0 +1,12 @@
+• Components Used
+→ Arduino Uno: Controls the LEDs and processes sensor input.
+→ IR Sensor Module: Detects the presence of objects.
+→ LEDs: Used to simulate automatic lighting.
+→ Jumper Wires: For connections.
+→ Cardboard: As a base for mounting components.
+
+• How It Works
+The IR sensor continuously monitors for objects.
+When it detects presence, the Arduino turns on LEDs one by one with a delay.
+After a short wait, the LEDs turn off step by step.
+This creates a visually appealing effect, similar to traffic lights or decorative lighting.

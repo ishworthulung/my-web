@@ -1,0 +1,8 @@
+This project was a major achievement for me because it was the first time I successfully built a working circuit using a transistor (BC547). Back then, I didn’t even know what a transistor really was. I only saw it mentioned in a video tutorial, which sparked my curiosity.
+
+I searched through my old collection of electronic scraps my “graveyard of electronics” and found a component that looked similar to the one in the video. I pulled it out from a PCB board and tried building the circuit as shown. Unfortunately, it didn’t work.
+
+I spent hours watching more videos, troubleshooting, and trying to figure out why. Eventually, I realized the tutorial specifically mentioned BC547, not just any transistor. That was the missing piece. I searched again in my electronics pile, but couldn’t find it. I even visited local shops, but no one had it in stock. Finally, after much effort, I found it online, ordered it, and waited eagerly.
+
+When the package arrived and I rebuilt the circuit with the correct transistor, it worked perfectly. That moment was unforgettable my very first transistor-based circuit coming to life.
+

@@ -1,0 +1,7 @@
+
+-> Components Used
+• Arduino: Acts as the brain of the project, reading sensor values, comparing them, and controlling the servo motor.
+
+• LDR (Light Dependent Resistor): Detects light intensity by varying its resistance depending on the amount of light.
+
+• Servo Motor: Rotates the panel precisely to the required angle based on Arduino’s instructions.

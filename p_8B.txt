@@ -1,0 +1,15 @@
+
+• How It Works
+I created a web page with two buttons (to control the bulbs) and a range selector (to adjust fan speed).
+The webpage sends data to a database using simple POST and GET requests.
+The database stores the values, which are then read by my ESP board every second.
+Based on the data changes, the ESP updates the pin outputs, controlling the bulbs and fan accordingly.
+
+• Components Used
+-> NodeMCU: The core of the project. It manages Wi‑Fi connectivity, communicates with the database, and controls the bulbs and fan.
+
+-> Relay Module: Since NodeMCU cannot directly handle AC power, I used relays to control the red and green bulbs. Relays act like switches, triggered by DC signals.
+
+-> Motor with Fan: Demonstrates speed control via IoT.
+
+-> Transistor: Just like Arduino pins, ESP pins cannot supply enough current to run motors directly. A transistor helps amplify the current to drive the fan motor.Bulbs, Holders, and Other Accessories

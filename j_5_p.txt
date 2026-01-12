@@ -1,0 +1,3 @@
+Python is my favorite programming language because it’s easier to use than many others. One thing I really like is that Python doesn’t require the semicolon (;) at the end of each line, unlike other languages.
+
+Another great feature is automatic variable handling you don’t need to declare whether a variable is an integer, string, or character. Python figures it out for you!

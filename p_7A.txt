@@ -1,0 +1,17 @@
+This is an advanced Arduino project where a car can be controlled via Bluetooth. I built it in a creative way by adding extra components such  as side lights, front lights, back lights,  reverse lights, and even a loud horn.
+
+> How It Works
+I used a Bluetooth module that communicates with 
+the Arduino using the UART protocol. This makes 
+it easy to receive and decode data transmitted 
+from a mobile phone via Bluetooth.
+
+• When the Bluetooth module receives data, it 
+decodes it and passes it to the Arduino.
+
+• The Arduino then processes the data using 
+conditional statements (if and else if).
+
+• Based on the comparison, the Arduino sets 
+pins to HIGH or LOW, which controls the car’s 
+movement (forward, backward) and activates LEDs or buzzers.

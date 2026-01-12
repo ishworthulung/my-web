@@ -1,0 +1,17 @@
+
+> Components Used
+• Arduino Nano – Acts as the CPU of the car, 
+controlling all functions such as movement and lights.
+
+• Motor Driver – Since the Arduino cannot supply 
+enough current to run motors directly, the motor 
+driver handles motor operations.
+
+• Bluetooth Module – Connects with the mobile phone 
+via Bluetooth, receives transmitted data, decodes it, and sends it to the Arduino in a readable format.
+
+• Siren – Works as the car’s horn.
+
+• LEDs – For headlights, side lights, and back lights.
+
+• Motors – Drive the car forward and backward.

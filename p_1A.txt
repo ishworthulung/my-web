@@ -1,0 +1,10 @@
+This is an easy and simple car made from everyday materials.
+Its body is built using items like a water jar cap, small sticks,
+cardboard, and ice cream sticks.
+
+For the electronics, I used:
+
+• DC 3V Gear Motor
+• Simple Switch
+• Battery
+• Connecting Wires

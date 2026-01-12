@@ -1,0 +1,7 @@
+
+• What We Learn From This Project
+Managing Arduino inputs and outputs simultaneously. 
+Understanding how ultrasonic sensors work. They emit ultrasonic waves, which bounce back after hitting an object. The sensor 
+calculates the time taken for the echo to return and converts it into distance.
+It Improving coding skills Because code using conditional statements (if, else if, else), storing data, 
+and applying logic for decision making.

@@ -1,0 +1,11 @@
+I built a small model of a traffic light that
+works like a real one. I used an Arduino microcontroller
+to control LEDs and a seven-segment display.
+
+I programmed it so that the red LED lights up first, 
+while the display shows a countdown timer. After the timer 
+ends, the light switches to yellow for a few seconds, and 
+then to green. When the green LED is on, the display shows "GO."
+
+The components I used include an Arduino, LEDs, resistors, 
+a seven-segment display, and connecting wires.

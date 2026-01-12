@@ -1,0 +1,8 @@
+I came up with this project while using a calculator. Calculators 
+make mathematical calculations easy, but when it comes to binary 
+and decimal conversions, it requires a lot of practice. To simplify 
+this, I created a device that can convert binary to decimal and decimal to binary.
+
+The device supports conversions up to 10 bits. For binary representation, 
+I used LEDs: if the bit is 1, the LED glows; if it is 0, the LED remains off.
+For decimal output, I used a four-digit seven-segment display.

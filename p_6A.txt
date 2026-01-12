@@ -1,0 +1,12 @@
+This project is a pop-up LED light hidden inside a box. 
+When the switch is turned on, the sliding part comes out 
+and the LED glows. To turn it off, the switch is flipped 
+again and the slider retracts back into the box, hiding the light.
+
+• Inspiration & Build
+I built this project about 5–6 years ago, at a time when I didn’t 
+yet know about Arduino, microcontrollers, or even transistors.
+Instead, I used simple aluminum foil pieces as switches to complete the circuit.
+The sliding mechanism was repurposed from an old DVD player’s CD tray, which 
+moves in and out when inserting or ejecting a disc.
+I attached LEDs to the slider, so when it extended, the aluminum foil touched another foil connected with wires, completing the circuit and lighting up the LEDs.

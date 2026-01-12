@@ -1,0 +1,7 @@
+
+• Technical Notes
+At that time, DVD players were becoming rare, so I recycled the tray mechanism for this project.
+
+Today, with more knowledge of components, I realize that the DVD player’s slider part actually contains a 1D joystick sensor, which could be used to detect whether the tray is inside or outside.
+
+Despite being one of my earliest projects, this pop-up light still works and remains a nostalgic reminder of my journey into electronics.

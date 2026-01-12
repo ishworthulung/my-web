@@ -1,0 +1,12 @@
+This project is designed to detect a light source and rotate towards it. At the current stage, the system operates on a single axis (1D), meaning it can rotate in only one direction. The core sensor used is an LDR (Light Dependent Resistor), a type of resistor whose resistance changes based on the intensity of light falling on it.
+
+-> How It Works
+• The Arduino continuously reads analog values from two LDR sensors.
+
+• It compares the readings:
+
+> If one sensor detects more light than the other, the Arduino adjusts the angle of a servo motor to rotate the panel toward that direction.
+
+> If both sensors detect equal light, the system remains stationary.
+
+• Once the panel aligns with the light source, both sensors receive balanced light, and the servo stops moving.

@@ -1,0 +1,13 @@
+• Overview
+    This car can avoid obstacles in front of it using
+    an Ultrasonic sensor. When the sensor detects an
+    object within 10–15 cm, the Arduino triggers a 
+    change in direction. The car then randomly turns 
+    either left or right, thanks to the code logic I implemented.
+
+• How It Works
+    After switching on, the car moves forward continuously.
+    The Ultrasonic sensor measures distance in centimeters.
+    If an object is detected within 10–15 cm, the Arduino 
+    calls a function to turn either left or right.
+    While turning, LED side lights blink to indicate the rotation.

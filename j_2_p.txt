@@ -1,0 +1,1 @@
+IoT is one of the most interesting areas and ranks among the top projects in robotics and electronics. I’ve also built a small IoT demo project to showcase how it works. You can try it yourself by clicking the button below though it requires a passkey and the presence of my IoT demo model.

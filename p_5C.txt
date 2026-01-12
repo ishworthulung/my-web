@@ -1,0 +1,7 @@
+
+• Components Used
+Atmega328 IC
+Multi-color LEDs
+Push switches
+Battery with charging module
+Four-digit seven-segment display

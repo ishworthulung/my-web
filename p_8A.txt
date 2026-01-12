@@ -1,0 +1,5 @@
+This is an exciting project because it demonstrates the power of the Internet of Things (IoT) the ability to control devices remotely through the internet. By installing IoT devices in a home, you can manage them from anywhere in the world, as long as both your device and your phone are connected to the internet. That means even if you’re in another country, you can still control your appliances back home.
+
+• Demo Setup
+For my demonstration, I built a small project with three output devices:
+A red bulb, A green bulb,A small fan (with adjustable speed to show IoT control in action)

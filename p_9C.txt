@@ -1,0 +1,7 @@
+
+-> What We Learn
+• Servo vs. Regular Motors: Unlike regular motors that spin continuously when powered, servo motors allow precise control over rotation angles (e.g., 90°, 180°). This makes them essential in robotics where accuracy is critical.
+
+• Handling Servo Motors: Through this project, we gain practical experience in programming and controlling servo motors for accurate positioning.
+
+• Understanding LDRs: By experimenting with LDRs, we learn how changes in resistance (lower ohms vs. higher ohms) affect electronic circuits depending on light intensity.

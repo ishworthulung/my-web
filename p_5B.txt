@@ -1,0 +1,10 @@
+• Features
+A side switch allows you to toggle between 
+decimal-to-binary and binary-to-decimal conversion modes.
+Red and blue LEDs indicate the current conversion status
+(red for decimal-to-binary, blue for binary-to-decimal).
+Three push buttons are included:
+One to increase the binary/decimal value
+One for "OK"
+One for reset
+Powered by a 3.7V rechargeable battery with a charging module, making the device portable and easy to carry anywhere.

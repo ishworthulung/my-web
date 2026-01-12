@@ -1,0 +1,8 @@
+When someone is learning Arduino, they can gain more knowledge 
+by experimenting with multiple LEDs and using multiple delay functions.
+A seven-segment display works like a group of LEDs arranged in segments,
+so we need to write code that sets multiple pins HIGH and LOW to show numbers.
+
+At the same time, we also handle the red, yellow, and green LEDs for the traffic
+light sequence. This makes the project both challenging and interesting, as it 
+teaches how to manage timing, pin control, and display logic all together.

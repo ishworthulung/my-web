@@ -1,0 +1,11 @@
+
+• Components Used
+    → Arduino Uno: Controls the motors and processes 
+      sensor data.
+    → Ultrasonic Sensor: Detects nearby obstacles.
+    → Motor Driver: Provides sufficient current to
+        run the motors, since Arduino alone cannot.
+    → LEDs: Used as side indicators during turns.
+    → Battery: Powers all components.
+    → Switch: For turning the car on/off.
+    → Wires: For connections between components.

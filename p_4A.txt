@@ -1,0 +1,11 @@
+Overview
+This project demonstrates how lights can be turned on automatically 
+without pressing a switch. The system detects the presence of a person 
+using an IR sensor module and then turns on LEDs step by step. 
+After a short delay, the LEDs turn off again in sequence.
+
+For the demo, I used an IR sensor module. Its limitation is that 
+it detects any object in front of the sensor, not just humans. 
+In real-life applications, more advanced sensors (like PIR sensors) can 
+be used to detect only human presence.
+

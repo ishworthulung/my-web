@@ -1,0 +1,19 @@
+
+• Learning Outcomes
+→ Working with multiple LEDs: controlling them in sequence using delays.
+Using digitalWrite with HIGH/LOW to manage LED states.
+
+→ Understanding IR sensors:Unlike ultrasonic sensors that use 
+sound waves, IR sensors use infrared light to detect objects.
+The module outputs a simple digital signal (true/false).
+When an object is near, it outputs LOW; when the object moves away, it outputs HIGH.
+This signal can be used to trigger LED functions in Arduino.
+
+• Reflection
+I discovered this project through social media, where many 
+people have built similar systems. Trying it myself was 
+fun and rewarding the sequential LED lighting effect looks beautiful in action.
+
+This project is a great introduction to sensor-based automation. 
+It helps beginners understand how sensors interact with Arduino, how to manage 
+multiple outputs, and how to create simple but effective real-life applications.

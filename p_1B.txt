@@ -1,0 +1,11 @@
+This project is great for anyone starting out in robotics and electronics. 
+It helps you understand how a motor, battery, and switch work together.
+
+You’ll also learn about the effect of battery polarity:
+• If the battery is connected in reverse, the car runs 
+    backward.
+• Flip the battery to the correct orientation, and the
+    car runs forward.
+
+It’s a fun and practical way to see how electricity powers motion. 
+Scroll down to watch the demo of this car in action!

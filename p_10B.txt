@@ -1,0 +1,26 @@
+How It Works
+The smart street light uses an LDR (Light Dependent Resistor) to detect ambient light levels:
+
+During the day, when there is sufficient sunlight, the LDR senses high light intensity. The circuit keeps the LED (representing the street light) turned off.
+
+At night, when light levels drop, the LDR’s resistance changes. This triggers the transistor to allow current flow, switching the LED on automatically.
+
+This simple yet effective design mimics how real smart street lights operate saving energy by turning on only when needed.
+
+Components Used
+• Transistor BC547: Acts as a switch, controlling the LED based on signals from the LDR.
+
+• LDR (Light Dependent Resistor): Detects light intensity and changes resistance accordingly.
+
+• LED: Represents the street light, glowing at night when triggered.
+
+• Resistors: Provide proper current control and protect the components.
+
+What We Learn
+• Understanding Transistors: This project teaches how transistors can act as electronic switches, a fundamental concept in electronics.
+
+• Practical Use of LDRs: We see how light-dependent resistors can be applied in real-world automation, such as street lighting.
+
+• Soldering Skills: Building the circuit on a matrix board requires soldering each component carefully, which improves precision and confidence in hardware assembly.
+
+• Problem-Solving Mindset: The journey of searching for the right component, troubleshooting errors, and finally succeeding highlights the importance of persistence in electronics projects.

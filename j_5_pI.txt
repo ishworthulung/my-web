@@ -1,0 +1,10 @@
+
+I’ve built several projects with Python, such as:
+
+• Dice Simulator
+
+• Multiplication Table Generator – Enter any number and it instantly shows the multiplication table from 1 to 10.
+
+• Age Calculator – Just input your age, and it calculates your year of birth.
+
+Python makes coding simple, fun, and powerful!

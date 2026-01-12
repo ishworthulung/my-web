@@ -1,0 +1,13 @@
+> What You Can Learn
+This project boosts creativity by showing 
+how endless possibilities can be achieved with 
+Arduino and Bluetooth. For example:
+
+• Turning this into a Bluetooth-controlled lighting 
+system for a room.
+
+• Building a small weather station where data is 
+read and displayed on a mobile phone.
+
+• Unlocking the concept of UART communication, 
+which can be applied to many other projects.
