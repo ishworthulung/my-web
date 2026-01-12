@@ -249,8 +249,161 @@ window.addEventListener('load', fixChatScale);
 
 
 
-    <script src="server.js"></script>
+    <script >
+             
+        function hide_meuns(){
+          const bt1 = document.getElementById("menu_shows");
+          const bt2 = document.getElementById("menu_hide");
+          const menuAll = document.getElementById("top_second");
+            const text_menu = document.getElementById("menu_table");
+
+            text_menu.classList.remove("show_menu_list");
+            text_menu.classList.add("hide_menu_list");
+            
+            menuAll.classList.remove("open");
+            menuAll.classList.add("close");
+
+            
+            bt1.style.display="none";
+            bt2.style.display="flex";
+           
+        }
+        function show_meuns(){
+            const bt1 = document.getElementById("menu_shows");
+            const bt2 = document.getElementById("menu_hide");
+            const menuAll = document.getElementById("top_second");
+            const text_menu = document.getElementById("menu_table");
+            
+            text_menu.classList.remove("hide_menu_list");
+                 text_menu.classList.add("show_menu_list");
+
+                bt1.style.display="flex";
+                bt2.style.display="none";
+                menuAll.classList.remove("close");
+                menuAll.classList.add("open");               
+
+        }
+        function loadPergrafh(){
+            fetch('p_1A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_1A').innerText = data);
+
+            fetch('p_1B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_1B').innerText = data);
+
+            ///////////////////////////////////////////
+
+             fetch('p_2A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_2A').innerText = data);
+
+             fetch('p_2B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_2B').innerText = data);
+
+             fetch('p_3A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_3A').innerText = data);
+
+             fetch('p_3B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_3B').innerText = data);
+
+             fetch('p_3C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_3C').innerText = data);
+
+            fetch('p_4A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_4A').innerText = data);
+            
+             fetch('p_4B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_4B').innerText = data);
+            
+             fetch('p_4C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_4C').innerText = data);
+
+            fetch('p_5A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_5A').innerText = data);
+
+            fetch('p_5B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_5B').innerText = data);
+
+            fetch('p_5C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_5C').innerText = data);
+
+            fetch('p_6A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_6A').innerText = data);
+
+            fetch('p_6B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_6B').innerText = data);
+
+            fetch('p_7A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_7A').innerText = data);
+
+            fetch('p_7B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_7B').innerText = data);
+
+            fetch('p_7C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_7C').innerText = data);
+
+            fetch('p_8A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_8A').innerText = data);
+
+            fetch('p_8B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_8B').innerText = data);
+
+            fetch('p_8C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_8C').innerText = data);
+
+             fetch('p_9A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_9A').innerText = data);
+
+            fetch('p_9B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_9B').innerText = data);
+
+            fetch('p_9C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_9C').innerText = data);
+
+            fetch('p_10A.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_10A').innerText = data);
+
+            fetch('p_10B.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_10B').innerText = data);
+
+            fetch('p_10C.txt')
+            .then(response => response.text())
+            .then(data => document.getElementById('p_10C').innerText = data);
+
+             
+        }
+
+        loadPergrafh()
+  
+
+
+    </script>
     <script src="tops.js" ></script>
 
 </html>
+
 
