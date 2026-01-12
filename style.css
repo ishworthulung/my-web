@@ -1299,8 +1299,8 @@ opacity: 0;
 
 #j_6 video{
   margin: 0;
-  width: 340px;
-  height: 550px;
+  width: 300px;
+  height: auto;
   border-radius: 10% 10%;
 }
 #j_6 h2{
@@ -1316,3 +1316,4 @@ opacity: 0;
 }
 
 }
+
