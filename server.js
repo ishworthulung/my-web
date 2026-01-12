@@ -81,148 +81,148 @@
 
         }
         function loadPergrafh(){
-            fetch('files/res/Electronic/Pargrafh/p_1A.txt')
+            fetch('p_1A.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_1A').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_1B.txt')
+            fetch('p_1B.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_1B').innerText = data);
 
             ///////////////////////////////////////////
 
-             fetch('files/res/Electronic/Pargrafh/p_2A.txt')
+             fetch('p_2A.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_2A').innerText = data);
 
-             fetch('files/res/Electronic/Pargrafh/p_2B.txt')
+             fetch('p_2B.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_2B').innerText = data);
 
-             fetch('files/res/Electronic/Pargrafh/p_3A.txt')
+             fetch('p_3A.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_3A').innerText = data);
 
-             fetch('files/res/Electronic/Pargrafh/p_3B.txt')
+             fetch('p_3B.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_3B').innerText = data);
 
-             fetch('files/res/Electronic/Pargrafh/p_3C.txt')
+             fetch('p_3C.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_3C').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_4A.txt')
+            fetch('p_4A.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_4A').innerText = data);
             
-             fetch('files/res/Electronic/Pargrafh/p_4B.txt')
+             fetch('p_4B.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_4B').innerText = data);
             
-             fetch('files/res/Electronic/Pargrafh/p_4C.txt')
+             fetch('p_4C.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_4C').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_5A.txt')
+            fetch('p_5A.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_5A').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_5B.txt')
+            fetch('p_5B.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_5B').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_5C.txt')
+            fetch('p_5C.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_5C').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_6A.txt')
+            fetch('p_6A.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_6A').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_6B.txt')
+            fetch('p_6B.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_6B').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_7A.txt')
+            fetch('p_7A.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_7A').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_7B.txt')
+            fetch('p_7B.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_7B').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_7C.txt')
+            fetch('p_7C.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_7C').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_8A.txt')
+            fetch('p_8A.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_8A').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_8B.txt')
+            fetch('p_8B.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_8B').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_8C.txt')
+            fetch('p_8C.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_8C').innerText = data);
 
-             fetch('files/res/Electronic/Pargrafh/p_9A.txt')
+             fetch('p_9A.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_9A').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_9B.txt')
+            fetch('p_9B.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_9B').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_9C.txt')
+            fetch('p_9C.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_9C').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_10A.txt')
+            fetch('p_10A.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_10A').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_10B.txt')
+            fetch('p_10B.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_10B').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/p_10C.txt')
+            fetch('p_10C.txt')
             .then(response => response.text())
             .then(data => document.getElementById('p_10C').innerText = data);
 
             ////////////////////////////////////////////
 
             // Load the text content for each paragraph
-            fetch('files/res/Electronic/Pargrafh/j_1_p.txt')
+            fetch('j_1_p.txt')
             .then(response => response.text())
             .then(data => document.getElementById('j_1_p').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/j_2_p.txt')
+            fetch('j_2_p.txt')
             .then(response => response.text())
             .then(data => document.getElementById('j_2_p').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/j_3_p.txt')
+            fetch('j_3_p.txt')
             .then(response => response.text())
             .then(data => document.getElementById('j_3_p').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/j_3_pI.txt')
+            fetch('j_3_pI.txt')
             .then(response => response.text())
             .then(data => document.getElementById('j_3_pI').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/j_3_pII.txt')
+            fetch('fj_3_pII.txt')
             .then(response => response.text())
             .then(data => document.getElementById('j_3_pII').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/j_4_p.txt')
+            fetch('j_4_p.txt')
             .then(response => response.text())
             .then(data => document.getElementById('j_4_p').innerText = data);
             
-            fetch('files/res/Electronic/Pargrafh/j_5_p.txt')
+            fetch('j_5_p.txt')
             .then(response => response.text())
             .then(data => document.getElementById('j_5_p').innerText = data);
 
-            fetch('files/res/Electronic/Pargrafh/j_5_pI.txt')
+            fetch('j_5_pI.txt')
             .then(response => response.text())
             .then(data => document.getElementById('j_5_pI').innerText = data);
             
@@ -233,3 +233,4 @@
         loadphoto()
         loadPergrafh()
   
+
