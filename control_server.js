@@ -43,7 +43,7 @@ var firebaseConfig = {
         firebase.database().ref("passkey").set(getRandomFourDigit());
          totalSeconds = 1*60 ;    
           updateTime();
-
+document.querySelector("#passkey input[type='password']".value = "";
       } else {
         alert("Incorrect passkey");
       }
