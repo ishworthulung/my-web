@@ -165,8 +165,8 @@
       if (totalSeconds > 0) {
         totalSeconds--;
       } else {
-        firebase.database().ref("green").set(0);
-        firebase.database().ref("red").set(0);
+        firebase.database().ref("green").set(false);
+        firebase.database().ref("red").set(false);
         firebase.database().ref("fan").set(0);
 
 
