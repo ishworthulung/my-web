@@ -103,30 +103,29 @@
       return Math.floor(Math.random() * (9999 - 1111 + 1)) + 1111; 
     }
 
-    function checkPasskey(){
-      var inputPasskey = document.querySelector("#passkey input[type='password']").value;
-      
-      var passkeyRef = firebase.database().ref("passkey"); 
-      passkeyRef.once("value").then(function(snapshot) { 
-        var correctPasskey = snapshot.val(); // Now you can compare 
-       
-      if (parseInt(inputPasskey, 10) == correctPasskey) {
-        document.getElementById("passkey").style.display = "none";
-        document.getElementById("controls").style.display = "block";
+   function checkPasskey(){
+  var inputPasskey = document.querySelector("#passkey input[type='password']").value;
+  
+  var passkeyRef = firebase.database().ref("passkey"); 
+  passkeyRef.once("value").then(function(snapshot) { 
+    var correctPasskey = snapshot.val(); 
+   
+    if (parseInt(inputPasskey, 10) == correctPasskey) {
+      document.getElementById("passkey").style.display = "none";
+      document.getElementById("controls").style.display = "block";
 
-        firebase.database().ref("passkey").set(getRandomFourDigit());
-         totalSeconds = 1*60 ;    
-          updateTime();
-    document.querySelector("#passkey input[type='password']".value = "";
-      } else {
-        alert("Incorrect passkey");
-      }
+      firebase.database().ref("passkey").set(getRandomFourDigit());
+      totalSeconds = 1*60;    
+      updateTime();
 
-        
-      
-      });  
-      
+      // ✅ Clear the input field correctly
+      document.querySelector("#passkey input[type='password']").value = "";
+    } else {
+      alert("Incorrect passkey");
     }
+  });  
+}
+
       
     var redRef = firebase.database().ref("red");
     redRef.on("value", function(snapshot) {
@@ -177,4 +176,5 @@
     }
     setInterval(updateTime, 1000);
   </script>
+  
 </html>
